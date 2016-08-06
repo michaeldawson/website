@@ -6,7 +6,6 @@
   left: 0;
   width: 310px;
   min-height: 100%;
-
   img {
     position: absolute;
     bottom: 0;
@@ -14,19 +13,54 @@
     width: 100%;
     z-index: -1;
   }
-
   .content {
     background: rgba(255, 255, 255, 0.85);
     padding: 20px;
-
     h1, h2, h3, h4, h5, h6 {
       color: $blue;
+    }
+    hr {
+      border-top: 1px solid #ddd;
+    }
+    .about i, .social i {
+      font-size: 25px;
+      width: 25px;
+      text-align: center;
+    }
+    .about, .social {
+      margin-top: 15px;
+    }
+    .about {
+      position: relative;
+      padding-left: 30px;
+      i {
+        left: 0;
+        top: -8px;
+        position: absolute;
+        &.ion-ios-videocam-outline {
+          font-size: 22px;
+          top: -6px;
+        }
+      }
+    }
+    .social {
+      position: absolute;
+      bottom: 225px;
+      right: 10px;
+      a {
+        color: inherit;
+        margin-right: 18px;
+        &:hover, &:active {
+          text-decoration: none;
+          color: $red;
+        }
+      }
     }
   }
 }
 
 .page {
   padding: 30px;
-  padding-left: 400px;
+  padding-left: 350px;
   background: $blue;
 }
