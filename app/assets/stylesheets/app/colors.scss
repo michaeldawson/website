@@ -1,0 +1,13 @@
+$theme1: #2E4559;
+$theme2: #8593A6;
+$background: #F2F2E9;
+$text: #333;
+
+body {
+  background: $background;
+  color: $text;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: $theme1;
+}
