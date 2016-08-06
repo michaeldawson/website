@@ -1,6 +1,6 @@
 .sidebar {
   background: #fff;
-  border-right: 2px solid $red;
+  border-right: 1px solid #999;
   position: fixed;
   top: 0;
   left: 0;
@@ -16,6 +16,7 @@
   .content {
     background: rgba(255, 255, 255, 0.85);
     padding: 20px;
+    text-align: center;
     h1, h2, h3, h4, h5, h6 {
       color: $blue;
     }
@@ -33,14 +34,19 @@
     .about {
       position: relative;
       padding-left: 30px;
+      text-align: left;
+      color: #777;
       i {
         left: 0;
         top: -8px;
         position: absolute;
         &.ion-ios-videocam-outline {
           font-size: 22px;
-          top: -6px;
+          top: -5px;
         }
+      }
+      &:hover {
+        color: inherit;
       }
     }
     .social {
@@ -48,11 +54,11 @@
       bottom: 225px;
       right: 10px;
       a {
-        color: inherit;
+        color: #777;
         margin-right: 18px;
         &:hover, &:active {
           text-decoration: none;
-          color: $red;
+          color: $blue;
         }
       }
     }
@@ -62,6 +68,6 @@
 .page {
   min-height: 100vh;
   padding: 30px;
-  padding-left: 350px;
+  margin-left: 310px;
   background: #f6f6f6;
 }
