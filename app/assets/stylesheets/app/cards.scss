@@ -4,8 +4,8 @@
   margin-bottom: 30px;
   position: relative;
   border-radius: 3px;
-  &.red {
-    border-top: 2px solid $red;
+  &.blue {
+    border-top: 2px solid $blue;
   }
   &.padded {
     padding: 20px;
@@ -17,7 +17,7 @@
     padding: 15px;
   }
   h1, h2, h3, h4, h5, h6 {
-    margin: 0;
+    margin-top: 0;
   }
   a:hover, a:focus {
     text-decoration: none;

@@ -1,0 +1,38 @@
+.medium-editor {
+  border-top: solid 1px rgba(0,0,0,0.145);
+  background: #fff;
+}
+.medium-editor-document[contenteditable] {
+  min-height: 700px;
+}
+
+.medium-editor-document blockquote {
+  border-left-color: $red;
+}
+.medium-editor-highlight-menu button.medium-editor-highlight-menu-button-active {
+  color: $red;
+}
+
+.medium-editor-document {
+  p, blockquote, li {
+    color: #777;
+  }
+}
+
+.medium-editor-document h2 {
+  font-family: $heading_font_family;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  text-align: center;
+  margin: 0 0 0.8em;
+  position: relative;
+  &:after {
+    border-bottom: solid 2px $blue;
+    width: 50px;
+    content: ' ';
+    bottom: -10px;
+    left: 50%;
+    margin-left: -25px;
+    position: absolute;
+  }
+}
