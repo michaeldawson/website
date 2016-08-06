@@ -1,0 +1,32 @@
+.sidebar {
+  background: #fff;
+  border-right: 1px solid $red;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 310px;
+  min-height: 100%;
+
+  img {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: -1;
+  }
+
+  .content {
+    background: rgba(255, 255, 255, 0.85);
+    padding: 20px;
+
+    h1, h2, h3, h4, h5, h6 {
+      color: $blue;
+    }
+  }
+}
+
+.page {
+  padding: 30px;
+  padding-left: 400px;
+  background: $blue;
+}

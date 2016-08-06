@@ -1,0 +1,20 @@
+$blue: #26a9df;
+$red: #FF001A;
+$orange: #FF7200;
+$green: #39CE4A;
+$teal: #0ECDAE;
+$yellow: #FFF000;
+
+$highlight1: #2E4559;
+$highlight2: #8593A6;
+
+$text: #333;
+
+body {
+  background: #fff;
+  color: $text;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: $highlight1;
+}

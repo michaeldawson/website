@@ -1,0 +1,29 @@
+.card {
+  background: #fff;
+  border: 1px solid #dedede;
+  margin-bottom: 30px;
+  position: relative;
+  border-radius: 3px;
+  &.red {
+    border-top: 2px solid $red;
+  }
+  &.padded {
+    padding: 20px;
+  }
+  .card-annotation {
+    text-align: center;
+    color: #aaa;
+    font-size: 80%;
+    padding: 15px;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+  }
+  a:hover, a:focus {
+    text-decoration: none;
+    .card-title {
+      color: $blue;
+    }
+  }
+
+}
