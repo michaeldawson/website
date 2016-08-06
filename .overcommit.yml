@@ -1,0 +1,20 @@
+PreCommit:
+  RuboCop:
+    enabled: true
+    command: ['bundle', 'exec', 'rubocop', '--rails', '--config', 'config/style_guides/rubocop.yml']
+    problem_on_unmodified_line: ignore
+    #on_warn: fail # Treat all warnings as failures
+
+  HamlLint:
+    enabled: true
+    command: ['bundle', 'exec', 'haml-lint', '--config', 'config/style_guides/haml-lint.yml']
+    problem_on_unmodified_line: ignore
+
+  ScssLint:
+    enabled: true
+    command: ['bundle', 'exec', 'scss-lint', '--config', 'config/style_guides/scss-lint.yml']
+    problem_on_unmodified_line: ignore
+
+  JsHint:
+    enabled: true
+    command: ['jshint', '--config', 'config/style_guides/jshint.json', '--exclude-path', 'config/style_guides/jshint.ignore']
