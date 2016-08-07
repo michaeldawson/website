@@ -10,6 +10,10 @@
 .medium-editor-document blockquote {
   border-left-color: $red;
 }
+.medium-editor-document code {
+  display: block;
+  border-radius: 0;
+}
 .medium-editor-highlight-menu button.medium-editor-highlight-menu-button-active {
   color: $red;
 }

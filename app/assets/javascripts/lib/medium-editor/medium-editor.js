@@ -330,6 +330,7 @@ MediumEditor.ModelDOMMapper = {
         attrs['metadata']['src'] = attrs['type'] == 'IMAGE' ? node.children[0].src : node.children[0].children[0].src;
         if (node.children.length > 1) attrs['metadata']['caption'] = node.children[1].innerText;
         break;
+      case 'code':         attrs['type'] = 'CODE'; break;
       case 'li':
         attrs['type'] = node.parentNode.tagName.toLowerCase() == 'ol' ? 'ORDERED_LIST_ITEM' : 'UNORDERED_LIST_ITEM';
         break;
@@ -415,6 +416,7 @@ MediumEditor.ModelDOMMapper = {
         case model.isHeading3():              tag = 'h4'; break;
         case model.isImage():                 tag = 'figure'; break;
         case model.isVideo():                 tag = 'figure'; break;
+        case model.isCode():                  tag = 'code'; break;
         case model.isOrderedListItem():       tag = 'li'; break;
         case model.isUnorderedListItem():     tag = 'li'; break;
         case model.isDivider():               tag = 'div'; break;     // Inner HTML is a hr, but we wrap it in a div so it can't be selected
@@ -1107,6 +1109,10 @@ MediumEditor.BlockModel = MediumEditor.Model.extend({
     return this._type == 'UNORDERED_LIST_ITEM';
   },
 
+  isCode: function() {
+    return this._type == 'CODE';
+  },
+
   isListItem: function() {
     return this.isOrderedListItem() ||
            this.isUnorderedListItem();
@@ -1129,6 +1135,7 @@ MediumEditor.BlockModel = MediumEditor.Model.extend({
            this.isQuote() ||
            this.isAnchor() ||
            this.isHeading() ||
+           this.isCode() ||
            this.isListItem();
   },
 
@@ -1974,6 +1981,7 @@ MediumEditor.InlineTooltipMenuView = MediumEditor.View.extend({
     'toggle':   '<i class="ion-ios-plus-empty"></i>',
     'image':    '<i class="ion-ios-camera-outline"></i>',
     'video':    '<i class="ion-ios-videocam-outline"></i>',
+    'code':     '<i class="ion-ios-gear-outline"></i>',
     'divider':  '<i class="ion-ios-minus-empty"></i>'
   },
 
@@ -2081,6 +2089,10 @@ MediumEditor.InlineTooltipMenuView = MediumEditor.View.extend({
         break;
       case 'video':
         this._prepareForVideoLink();
+        break;
+      case 'code':
+        selectionModel.startBlock().setType('CODE');
+        this._selection().model().trigger('changed');
         break;
       case 'divider':
         selectionModel.startBlock().setType('DIVIDER');
@@ -3263,6 +3275,13 @@ MediumEditor.EditorView = MediumEditor.View.extend({
           startBlock.setType('PARAGRAPH');
           e.preventDefault();
 
+        } else if(startBlock.isCode()) {
+          var selectionIx = this._selectionModel.startIx();
+
+          this._model.insertBlockAt('CODE', selectionIx + 1);
+          this._selectionModel.caret(selectionIx + 1);
+
+          e.preventDefault();
         } else {
 
           // Not on a blank list item. Insert a new

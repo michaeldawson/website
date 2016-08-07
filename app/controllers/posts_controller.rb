@@ -10,6 +10,17 @@ class PostsController < ApplicationController
     end
   end
 
+  def update
+    success = post.update(post_params)
+
+    if success
+      flash[:notice] = 'Success!'
+      redirect_to post_path(post)
+    else
+      render :new
+    end
+  end
+
   private
 
   helper_method :post

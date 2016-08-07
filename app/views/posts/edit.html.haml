@@ -1,2 +1,3 @@
-%h1 Posts#edit
-%p Find me in app/views/posts/edit.html.haml
+= standard_form_for post, url: post_path(post) do |form|
+  .body
+    = render 'form', form: form
