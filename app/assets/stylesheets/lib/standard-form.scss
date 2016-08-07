@@ -1,0 +1,777 @@
+// ------------------------------------------------
+//  Variables
+// ------------------------------------------------
+
+$standard-form-border: solid 1px rgba(0,0,0,0.145);
+$standard-form-border-radius: 2px;
+$standard-form-ios-padding: 1.1em;
+
+// ------------------------------------------------
+//  Form Reset
+// ------------------------------------------------
+//  Adapted from YUI 3.5.0
+// ------------------------------------------------
+
+form.standard-form {
+  &,
+  fieldset,
+  input,
+  label,
+  textarea {
+    margin:0;
+    padding:0;
+  }
+  fieldset {
+    border:0;
+  }
+  input,
+  textarea,
+  select {
+    font-family:inherit;
+    font-size:inherit;
+    font-weight:inherit;
+  }
+  /*to enable resizing for IE*/
+  input,
+  textarea,
+  select {
+    *font-size:100%;
+  }
+  select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+  }
+  :focus {
+    outline: 0;
+  }
+}
+
+// ------------------------------------------------
+//  Form Component Styles
+// ------------------------------------------------
+
+form.standard-form {
+  margin-bottom: 3em;
+  &.standard-form-locked {
+    @include filter(grayscale(100%));
+  }
+}
+
+// ------------------------------------------------
+//  Structure
+// ------------------------------------------------
+
+.standard-form-group {
+  margin-bottom: 1.5em;
+}
+.standard-form-control-container {
+  display: table;
+  border-collapse: separate;
+  width: 100%;
+  table-layout: fixed;              // Without this, in small spaces, things like selects exceed their bounds
+  .standard-form-prepend,
+  .standard-form-control-wrapper,
+  .standard-form-append {
+    display: table-cell;
+    white-space: nowrap;
+    vertical-align: middle;
+  }
+  .standard-form-prepend,
+  .standard-form-append {
+    width: 1%;
+  }
+}
+.standard-form-control-wrapper {
+  position: relative;
+}
+.standard-form .standard-form-section,
+.standard-form-section {
+  margin-bottom: 2em;
+  &:not(:first-of-type) {
+    padding-top: 2em;
+    border-top: solid 1px rgba(0,0,0,0.03);
+  }
+}
+.standard-form-buttons {
+  text-align: right;
+  margin-top: 2em;
+}
+.standard-form-section-left-column,
+.standard-form-section-right-column {
+  position: relative;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media (min-width: 768px) {
+  .standard-form-section-left-column,
+  .standard-form-section-right-column {
+    float: left;
+    min-height: 1px;
+  }
+  .standard-form-section-left-column {
+    width: 30%;
+  }
+  .standard-form-section-right-column {
+    width: 70%;
+  }
+}
+@media (max-width: 767px) {
+  .standard-form-section-left-column {
+    margin-bottom: 15px;
+  }
+}
+
+
+// ------------------------------------------------
+//  Labels
+// ------------------------------------------------
+
+form.standard-form .standard-form-label {
+  margin: 0 0 5px;
+  width: 100%;
+}
+.standard-form-label-text,
+.standard-form-label-hint {
+  text-align: left;
+}
+.standard-form-label-text {
+  color: #777;
+  font-weight: 400;
+}
+.standard-form-label-hint {
+  color: #aaa;
+  margin-left: 12px;
+  font-weight: 300;
+}
+.standard-form-section-title {
+  font-size: 21px;
+  font-weight: 300;
+  letter-spacing: -0.5px;
+  margin: 3px 0 0 0;
+  color: #777;
+}
+
+// ------------------------------------------------
+//  Controls
+// ------------------------------------------------
+
+.standard-form-control,
+form.standard-form .standard-form-control {
+  display: block;
+  width: 100%;
+  border: $standard-form-border;
+  height: 42px;
+  padding-left: 0.75em;
+  padding-right: 0.75em;
+  line-height: 40px;
+  background: #fff;
+  @include placeholder-color(rgba(0,0,0,0.25));
+  @include appearance(none);
+  &:focus {
+    border-color: $blue;
+  }
+}
+
+// Border rounding on controls, except where
+// there's a prepend/append
+.standard-form-control-container > :first-child .standard-form-control {
+  border-top-left-radius: $standard-form-border-radius;
+  border-bottom-left-radius: $standard-form-border-radius;
+}
+.standard-form-control-container > :last-child .standard-form-control {
+  border-top-right-radius: $standard-form-border-radius;
+  border-bottom-right-radius: $standard-form-border-radius;
+}
+
+// ------------------------------------------------
+//  Prepends/appends
+// ------------------------------------------------
+
+.standard-form-prepend,
+.standard-form-append {
+  padding-left: 1em;
+  padding-right: 1em;
+  background: #fff;
+  color: rgba(0,0,0,0.4);
+  text-align: center;
+  border: $standard-form-border;
+  line-height: 1em;
+  padding-top: 1px;
+}
+.standard-form-prepend {
+  border-right: none;
+  border-top-left-radius: $standard-form-border-radius;
+  border-bottom-left-radius: $standard-form-border-radius;
+}
+.standard-form-append {
+  border-left: none;
+  border-top-right-radius: $standard-form-border-radius;
+  border-bottom-right-radius: $standard-form-border-radius;
+}
+
+// ------------------------------------------------
+//  Hints
+// ------------------------------------------------
+
+.standard-form-hint {
+  font-size: 12px;
+  color: #bbb;
+  margin: 5px 0 0;
+  line-height: 1.3em;
+  display: block;
+  font-weight: 300;
+}
+.standard-form-section-hint {
+  font-size: 90%;
+  color: #bbb;
+  margin: 1em 0 0;
+  line-height: 1.3em;
+}
+
+// ------------------------------------------------
+//  Errors
+// ------------------------------------------------
+
+.standard-form-error-message {
+  color: #fff;
+  background: $red;
+  position: relative;
+  padding: 0.75em 1em;
+  margin-top: -1px;
+  border-bottom-left-radius: $standard-form-border-radius;
+  border-bottom-right-radius: $standard-form-border-radius;
+
+  // The arrow above
+  &:before {
+    content: ' ';
+    border-color: transparent;
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 6px 6px 6px;
+    border-bottom-color: $red;
+    top: -5px;
+    right: 1.1em;
+    z-index: 2;
+  }
+
+  // Links within errors need to be styled
+  // differently
+  a {
+    color: #fff;
+    border-bottom: dotted 1px rgba(255,255,255,0.66);
+    &:hover, &:active, &:focus {
+      border-bottom-style: solid;
+      text-decoration: none;
+    }
+  }
+
+  &.base-error-message {
+    margin-bottom: 15px;
+    border-top-left-radius: $standard-form-border-radius;
+    border-top-right-radius: $standard-form-border-radius;
+    &:before {
+      display: none;
+    }
+  }
+}
+
+.standard-form-error-icon {
+  @extend .ion-close;
+  color: $red;
+  top: 0.8em;
+  right: 1.1em;
+  position: absolute;
+  z-index: 2;
+}
+
+// ------------------------------------------------
+//  Collection Fields
+// ------------------------------------------------
+
+.standard-form-collection-fields {
+  margin-bottom: 1.5em;
+}
+.standard-form-collection-fieldset {
+  position: relative;
+  margin-right: -2.75em;
+  padding-right: 2.75em;
+  &:hover:not(.standard-form-collection-field-only-child) {
+    .standard-form-collection-fieldset-remove {
+      display: inline-block;
+    }
+  }
+}
+.standard-form-collection-fieldset-remove {
+  display: none;
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 0.82em 1em;
+  @include appearance(none);
+  @extend .ion-close;
+  background: none;
+  border: none;
+  color: #ddd;
+  &:hover {
+    color: $red;
+  }
+}
+.standard-form-collection-fieldset .standard-form-group {
+  margin-bottom: 0.5em;
+}
+.standard-form-collection-fields-add-button {
+  @include appearance(none);
+  background: none;
+  border: none;
+  font-size: 12px;
+  color: #bbb;
+  margin-top: 1em;
+  padding: 0;
+  &:hover {
+    color: $green;
+  }
+}
+@media (max-width: 810px) {
+  .standard-form-collection-fieldset {
+    margin-right: 0;
+    padding-right: 0;
+    &:not(.standard-form-collection-field-only-child) {
+      .standard-form-collection-fieldset-remove {
+        display: inline-block;
+        padding: 0.55em 0.75em;
+      }
+    }
+  }
+}
+
+// ------------------------------------------------
+//  Advanced Sections
+// ------------------------------------------------
+
+.standard-form-advanced {
+  &:before, &:after {
+    display: table;
+    content: ' ';
+  }
+  &:after {
+    clear: both;
+  }
+  margin-bottom: 1.5em;
+}
+.standard-form-advanced-body {
+  display: none;
+}
+.standard-form-advanced-toggle {
+  cursor: pointer;
+  float: right;
+  @include noselect();
+  &:before {
+    content: 'More Options';
+    color: #aaa;
+    font-size: 12px;
+  }
+  &:after {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    vertical-align: middle;
+    content: ' ';
+    border-top: 4px solid;
+    border-right: 4px solid transparent;
+    border-left: 4px solid transparent;
+    margin-left: 7px;
+    color: #bbb;
+  }
+  &:hover {
+    &:before, &:after { color: $green; }
+  }
+}
+.standard-form-advanced.open {
+  .standard-form-advanced-body {
+    display: block;
+  }
+  .standard-form-advanced-toggle {
+    &:before {
+      content: 'Fewer Options';
+    }
+    &:after {
+      border-top: none;
+      border-bottom: 4px solid;
+    }
+  }
+}
+
+// ------------------------------------------------
+//  Specific Field Types
+// ------------------------------------------------
+
+.standard-form .standard-form-group {
+
+  &.money-field .standard-form-control {
+    text-align: right;
+  }
+
+  &.code-field .standard-form-control {
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+  &.date-field, &.datetime-local-field {
+    .standard-form-control {
+      &::-webkit-datetime-edit-text,
+      &::-webkit-datetime-edit-day-field:not([aria-valuenow]),
+      &::-webkit-datetime-edit-month-field:not([aria-valuenow]),
+      &::-webkit-datetime-edit-year-field:not([aria-valuenow]),
+      &::-webkit-datetime-edit-hour-field:not([aria-valuenow]),
+      &::-webkit-datetime-edit-minute-field:not([aria-valuenow]),
+      &::-webkit-datetime-edit-ampm-field:not([aria-valuenow]) {
+        color: #ccc;
+      }
+    }
+  }
+
+  &.select {
+    .standard-form-control-wrapper {
+      @extend .ion-chevron-down;
+      &:before {
+        color: #aaa;
+        z-index: 2;
+        position: absolute;
+        right: 1.6em;
+        top: 50%;
+        margin-top: -5px;
+        font-size: 10px;
+        cursor: pointer;
+        pointer-events: none;
+      }
+    }
+    .standard-form-control {
+      cursor: pointer;
+      padding-right: 2.5em;
+    }
+  }
+
+  &.text-area .standard-form-control {
+    min-height: 100px;
+    line-height: 1.4em;
+    padding: 0.75em;
+  }
+
+  &.check-box {
+    display: table;
+    width: 100%;
+    min-height: 2.2em;
+
+    .standard-form-label {
+      display: table-cell;
+      vertical-align: middle;
+      padding-left: 40px;
+      position: relative;
+      cursor: pointer;
+      @include noselect();
+      &:hover {
+        .standard-form-control:not(:checked) {
+          background: rgba(0,0,0,0.03);
+        }
+      }
+    }
+    .standard-form-control-container {
+      position: absolute;
+      top: 50%;
+      margin-top: -12.5px;
+      left: 0;
+      display: block;
+      width: auto;
+    }
+    .standard-form-control {
+      @include appearance(none);
+      cursor: pointer;
+      height: 25px;
+      width: 25px;
+      display: inline-block;
+      padding: 0;
+      line-height: 1;
+      @include border-radius($standard-form-border-radius);
+      background-color: #fff;
+      color: #fff;
+      text-align: center;
+      border: $standard-form-border;
+      &:checked {
+        @extend .ion-ios-checkmark-empty;
+        background: $green;
+        border-color: $green;
+        &:before {
+          font-size: 32px;
+          line-height: 24px;
+        }
+        &:focus, &:hover {
+          border-color: $green;
+        }
+      }
+      &:focus, &:hover {
+        border-color: #d9d9d9;
+      }
+    }
+    .standard-form-hint {
+      margin: 2px 0 0;
+    }
+  }
+
+  &.radio-button {
+    display: table;
+    width: 100%;
+    min-height: 2.2em;
+    table-layout: fixed;
+
+    .standard-form-label {
+      display: table-cell;
+      vertical-align: middle;
+      padding-right: 4.5em;
+      position: relative;
+      cursor: pointer;
+      @include noselect();
+    }
+    .standard-form-control-container {
+      position: absolute;
+      top: 50%;
+      margin-top: -1em;
+      right: 0;
+      display: block;
+      width: auto;
+    }
+    .standard-form-control {
+      @include appearance(none);
+      height: 2em;
+      width: 2em;
+      padding: 0;
+      @include border-radius(100%);
+      border: $standard-form-border;
+      @extend .ion-checkmark;
+      background: rgba(0,0,0,0.02);
+      &:before {
+        color: #fff;
+        line-height: 2em;
+        width: 1.9em;
+        vertical-align: top;
+        text-align: center;
+      }
+      &:checked {
+        background-color: $green;
+        border-color: $green;
+        &:focus {
+          border-color: lighten($green, 2%);
+          background-color: lighten($green, 2%);
+        }
+      }
+      &:not(:checked) {
+        &:before {
+          display: none;
+        }
+      }
+    }
+    .standard-form-hint {
+      margin: 2px 0 0;
+    }
+  }
+
+  &.collection-check-box:not(.last-check-box) {
+    margin-bottom: 0.5em;
+  }
+}
+
+.standard-form-group {
+  &.image-upload {
+    position: relative;
+    margin: 0;
+    input {
+      cursor: pointer;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      opacity: 0;
+      height: auto;
+    }
+  }
+}
+
+.standard-form-locked {
+  .standard-form-group {
+    &.image-upload {
+      @include filter(grayscale(100%));
+      input {
+        cursor: default;
+      }
+    }
+  }
+}
+
+// ------------------------------------------------
+//  Sectioned Style
+// ------------------------------------------------
+
+.standard-form.standard-form-sectioned {
+  .standard-form-section {
+    margin-left: -15px;
+    margin-right: -15px;
+    &:before, &:after {
+      display: table;
+      content: ' ';
+    }
+    &:after {
+      clear: both;
+    }
+  }
+}
+
+// ------------------------------------------------
+//  iOS Style
+// ------------------------------------------------
+
+.standard-form.standard-form-ios {
+
+  .standard-form-control,
+  .standard-form-label,
+  .standard-form-error-message {
+    padding: $standard-form-ios-padding;
+  }
+
+  .standard-form-label {
+    position: absolute;
+    width: 33%;
+    z-index: 2;
+  }
+  .standard-form-control {
+    padding-left: 35%;
+    display: block;
+    width: 100%;
+    @include border-radius(0);
+    height: auto;
+    line-height: normal;
+    &:focus {
+      position: relative;
+      z-index: 1;
+    }
+  }
+
+  .standard-form-group {
+    margin-bottom: -1px;
+    background: #fff;
+  }
+
+  .standard-form-section {
+    &:not(:first-child) {
+      padding-top: 0;
+      border-top: none;
+    }
+  }
+
+  .standard-form-error-icon {
+    top: 1.1em;
+  }
+
+  .standard-form-radio-button-section {
+    position: relative;
+    .standard-form-label {
+      padding-left: 3.5em;
+    }
+    .standard-form-error-message {
+      padding-left: 3.5em;
+    }
+  }
+
+  .standard-form-group {
+    &.radio-button {
+      border: $standard-form-border;
+      .standard-form-label {
+        width: 100%;
+        position: relative;
+        cursor: pointer;
+        padding-left: 3.5em;
+      }
+      .standard-form-control-container {
+        left: 0.9em;
+        top: 1.9em;
+        right: auto;
+      }
+      .standard-form-control-wrapper {
+        font-size: 80%;
+      }
+      .standard-form-control {
+        padding: 0;
+        @include border-radius(100%);
+        height: 2em;
+        width: 2em;
+      }
+      &.disabled {
+        background: #fafafa;
+        @include greyscale();
+        .standard-form-label {
+          cursor: default;
+          @include opacity(0.5);
+        }
+        .standard-form-label-hint {
+          color: #bbb;
+        }
+      }
+    }
+  }
+
+  & > .standard-form-group:first-of-type.radio-button,
+  & > .standard-form-group:first-of-type:not(.radio-button) .standard-form-control,
+  & > .standard-form-section > .standard-form-group:first-of-type.radio-button,
+  & > .standard-form-section > .standard-form-group:first-of-type:not(.radio-button) .standard-form-control {
+    border-top-left-radius: $standard-form-border-radius;
+    border-top-right-radius: $standard-form-border-radius;
+  }
+
+  & > .standard-form-group:last-of-type.radio-button,
+  & > .standard-form-group:last-of-type:not(.radio-button) .standard-form-control,
+  & > .standard-form-section > .standard-form-group:last-of-type.radio-button,
+  & > .standard-form-section > .standard-form-group:last-of-type:not(.radio-button) .standard-form-control {
+    border-bottom-left-radius: $standard-form-border-radius;
+    border-bottom-right-radius: $standard-form-border-radius;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .standard-form.standard-form-ios {
+    .standard-form-label-hint {
+      display: block;
+      margin-left: 0;
+      margin-top: 2px;
+      font-size: 13px;
+      color: rgba(0, 0, 0, 0.33);
+    }
+    .standard-form-group.radio-button {
+      .standard-form-label {
+        padding-right: $standard_form_ios_padding;
+      }
+    }
+    .standard-form-label {
+      width: 44%;
+      margin: 1px 0 0;
+    }
+    .standard-form-group:not(.radio-button) {
+      .standard-form-label-text {
+        white-space: nowrap;
+        display: block;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+    }
+    .standard-form-control {
+      padding-left: 45%;
+    }
+    .standard-form-radio-button-section {
+      .standard-form-label {
+        padding-left: $standard_form_ios_padding;
+      }
+    }
+  }
+}
