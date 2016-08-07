@@ -15,7 +15,16 @@ class PostsController < ApplicationController
       flash[:notice] = 'Success!'
       redirect_to post_path(post)
     else
-      render :new
+      render :edit
+    end
+  end
+
+  def destroy
+    if post.destroy
+      flash[:success] = 'Done deal.'
+      redirect_to posts_path
+    else
+      flash[:error] = "Sorry, that didn't work."
     end
   end
 
@@ -28,7 +37,7 @@ class PostsController < ApplicationController
 
   helper_method :post
   def post
-    @post ||= params.key?(:id) ? Post.find(params[:id]) : Post.new(post_params)
+    @post ||= params.key?(:id) ? Post.find_by!(slug: params[:id]) : Post.new(post_params)
   end
 
   def post_params

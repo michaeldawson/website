@@ -333,7 +333,7 @@ form.standard-form .standard-form-control {
   margin-top: 1em;
   padding: 0;
   &:hover {
-    color: $green;
+    color: $blue;
   }
 }
 @media (max-width: 810px) {
@@ -388,7 +388,7 @@ form.standard-form .standard-form-control {
     color: #bbb;
   }
   &:hover {
-    &:before, &:after { color: $green; }
+    &:before, &:after { color: $blue; }
   }
 }
 .standard-form-advanced.open {
@@ -503,14 +503,14 @@ form.standard-form .standard-form-control {
       border: $standard-form-border;
       &:checked {
         @extend .ion-ios-checkmark-empty;
-        background: $green;
-        border-color: $green;
+        background: $blue;
+        border-color: $blue;
         &:before {
           font-size: 32px;
           line-height: 24px;
         }
         &:focus, &:hover {
-          border-color: $green;
+          border-color: $blue;
         }
       }
       &:focus, &:hover {
@@ -561,11 +561,11 @@ form.standard-form .standard-form-control {
         text-align: center;
       }
       &:checked {
-        background-color: $green;
-        border-color: $green;
+        background-color: $blue;
+        border-color: $blue;
         &:focus {
-          border-color: lighten($green, 2%);
-          background-color: lighten($green, 2%);
+          border-color: lighten($blue, 2%);
+          background-color: lighten($blue, 2%);
         }
       }
       &:not(:checked) {

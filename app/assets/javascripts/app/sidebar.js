@@ -8,10 +8,6 @@ $(document).on('turbolinks:load', function() {
   var repositionSocialIconsIfUnderneathContent = function(event) {
     var height = $window.height();
 
-    console.log('window height: ' + height);
-    console.log('Trigger height: ' + triggerHeight);
-    console.log('----------------------------------------');
-
     if(height < triggerHeight){
       $socialIcons.css('position', 'static');
     } else {

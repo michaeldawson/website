@@ -1,7 +1,6 @@
 .row
-  .col-sm-6= form.text_field :title
-  .col-sm-6= form.text_field :slug, placeholder: 'Automatically generate'
+  .col-sm-5= form.text_field :title
+  .col-sm-5= form.text_field :slug, placeholder: 'Automatically generate'
+  .col-sm-2= form.submit "Save", class: 'btn btn-primary btn-block'
 
 = form.medium_editor :body
-
-= form.submit "Save", class: 'btn btn-primary'
