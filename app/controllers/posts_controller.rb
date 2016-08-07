@@ -23,6 +23,11 @@ class PostsController < ApplicationController
 
   private
 
+  helper_method :posts
+  def posts
+    @posts ||= Post.all
+  end
+
   helper_method :post
   def post
     @post ||= params.key?(:id) ? Post.find(params[:id]) : Post.new(post_params)
