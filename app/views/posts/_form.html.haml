@@ -1,6 +1,7 @@
-= form.section title: 'General' do
-  = form.text_field :title
-= form.section title: 'Content' do
-  = form.medium_editor :body
+.row
+  .col-sm-6= form.text_field :title
+  .col-sm-6= form.text_field :slug, placeholder: 'Automatically generate'
+
+= form.medium_editor :body
 
 = form.submit "Save", class: 'btn btn-primary'

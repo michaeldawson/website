@@ -5,9 +5,37 @@ RSpec.describe Post, type: :model do
   let(:valid_attributes) {
     {
       title: 'A post',
-      body: 'Some body'
+      body: 'Some body',
+      slug: 'some-slug'
     }
   }
+
+  describe 'Before validation' do
+    context 'when the slug is present' do
+      it "doesn't change the slug" do
+        expect {
+          post.valid?
+        }.not_to change {
+          post.slug
+        }
+      end
+    end
+
+    context 'when the slug is blank' do
+      before :each do
+        valid_attributes[:slug] = nil
+        valid_attributes[:title] = 'Some fancy title with extra chars!'
+      end
+
+      it 'builds a valid slug from the title' do
+        expect {
+          post.valid?
+        }.to change {
+          post.slug
+        }.from(nil).to('some-fancy-title-with-extra-chars')
+      end
+    end
+  end
 
   describe 'Validation' do
     it 'should be valid with valid attributes' do

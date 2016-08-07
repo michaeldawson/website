@@ -61,12 +61,14 @@
       bottom: 225px;
       right: 10px;
       a {
-        color: #777;
         margin-right: 18px;
-        &:hover, &:active {
-          text-decoration: none;
-          color: $blue;
-        }
+      }
+    }
+    a {
+      color: #777;
+      &:hover, &:active {
+        text-decoration: none;
+        color: $blue;
       }
     }
   }
