@@ -1,3 +1,2 @@
-= standard_form_for post, url: post_path(post) do |form|
-  .body
-    = render 'form', form: form
+= standard_form_for post, url: post_path(post), layout: :ios do |form|
+  = render 'form', form: form

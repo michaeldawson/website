@@ -1,6 +1,6 @@
-- posts.each do |post|
-  .card.padded.blue
-    .medium-editor-document
-      .layout-single-column
-        %h2= post.title
+.posts
+  - posts.each do |post|
+    .card.padded.blue
+      .medium-editor-document
+        %h2= link_to post.title, post
         = post.body.html_safe

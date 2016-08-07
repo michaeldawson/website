@@ -5,6 +5,9 @@
 .medium-editor-document {
   padding: 25px;
 }
+.medium-editor-document > .layout-background:first-child {
+  margin-top: 0;
+}
 .medium-editor-document[contenteditable] {
   min-height: 700px;
 }

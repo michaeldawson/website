@@ -1,7 +1,7 @@
 class PostsController < ApplicationController
-  def create
-    success = post.save
+  before_action :authenticate_user!, except: [:index, :show]
 
+  def create
     if success
       flash[:notice] = 'Success!'
       redirect_to post_path(post)
@@ -11,9 +11,7 @@ class PostsController < ApplicationController
   end
 
   def update
-    success = post.update(post_params)
-
-    if success
+    if post.update(post_params)
       flash[:notice] = 'Success!'
       redirect_to post_path(post)
     else

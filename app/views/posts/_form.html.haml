@@ -1,4 +1,6 @@
-= form.text_field :title
-= form.submit "Save", class: 'btn btn-primary'
+= form.section title: 'General' do
+  = form.text_field :title
+= form.section title: 'Content' do
+  = form.medium_editor :body
 
-= form.medium_editor :body
+= form.submit "Save", class: 'btn btn-primary'

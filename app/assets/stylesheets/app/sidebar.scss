@@ -18,8 +18,13 @@
     padding: 20px;
     text-align: center;
     h1 {
-      color: $blue;
       margin-top: 0;
+      a {
+        color: $blue;
+        &:hover, &:active {
+          text-decoration: none;
+        }
+      }
     }
     hr {
       border-top: 1px solid #ddd;
@@ -41,6 +46,7 @@
         left: 0;
         top: -8px;
         position: absolute;
+        color: $blue;
         &.ion-ios-videocam-outline {
           font-size: 22px;
           top: -5px;
@@ -67,6 +73,7 @@
 }
 
 .page {
+  padding: 25px;
   min-height: 100vh;
   margin-left: 300px;
   background: #f6f6f6;

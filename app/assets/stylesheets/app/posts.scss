@@ -1,0 +1,9 @@
+.posts {
+  padding: 25px 50px;
+  a {
+    color: #333;
+    &:hover {
+      color: $blue;
+    }
+  }
+}
