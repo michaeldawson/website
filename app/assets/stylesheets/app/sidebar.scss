@@ -1,6 +1,6 @@
 .sidebar {
   background: #fff;
-  border-right: 1px solid #999;
+  border-right: 2px solid $red;
   position: fixed;
   top: 0;
   left: 0;
@@ -17,8 +17,9 @@
     background: rgba(255, 255, 255, 0.85);
     padding: 20px;
     text-align: center;
-    h1, h2, h3, h4, h5, h6 {
+    h1 {
       color: $blue;
+      margin-top: 0;
     }
     hr {
       border-top: 1px solid #ddd;
@@ -67,7 +68,6 @@
 
 .page {
   min-height: 100vh;
-  padding: 30px;
   margin-left: 300px;
   background: #f6f6f6;
 }
