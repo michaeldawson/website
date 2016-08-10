@@ -15,9 +15,16 @@
   border-left-color: $red;
   border-left-width: 2px;
 }
+.medium-editor-document blockquote + blockquote {
+  padding-top: 0px;
+}
 .medium-editor-document code {
   display: block;
   border-radius: 0;
+  margin-bottom: 30px
+}
+.medium-editor-document code + code {
+  margin-top: -30px;
 }
 .medium-editor-highlight-menu button.medium-editor-highlight-menu-button-active {
   color: $red;
