@@ -26,3 +26,9 @@ form.post {
     margin-top: 28px;
   }
 }
+
+@media (max-width: 768px) {
+  .post {
+    padding: 10px;
+  }
+}

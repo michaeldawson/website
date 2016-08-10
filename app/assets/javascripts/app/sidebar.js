@@ -7,6 +7,9 @@ $(document).on('turbolinks:load', function() {
     var triggerHeight = $sidebarContent.height() + parseInt($socialIcons.css('bottom')) + 60;
 
     var repositionSocialIconsIfUnderneathContent = function(event) {
+      var width = $window.width();
+      if(width < 768) return false;
+
       var height = $window.height();
 
       if(height < triggerHeight){

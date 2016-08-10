@@ -78,3 +78,28 @@
   min-height: 100vh;
   margin-left: 300px;
 }
+
+@media (max-width: 768px) {
+  .sidebar {
+    position: static;
+    width: 100%;
+    border: none;
+    img {
+      display: none;
+    }
+    .content {
+      .about {
+        display: none;
+      }
+      .social {
+        position: static;
+      }
+    }
+  }
+  .page {
+    margin-left: 0;
+    .posts {
+      padding: 20px;
+    }
+  }
+}
