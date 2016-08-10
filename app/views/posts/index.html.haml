@@ -3,4 +3,7 @@
     .card.padded.blue
       .medium-editor-document
         %h2= link_to post.title, post
-        = post.body.html_safe
+        .layout-single-column
+          = post.summary.html_safe
+          %p
+            %em= link_to 'Read more...', post

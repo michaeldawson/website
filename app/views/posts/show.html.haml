@@ -1,8 +1,8 @@
 - if user_signed_in?
   .post-actions
     = link_to 'Edit', [:edit, post]
-    = link_to 'Destroy', post, method: :delete, class: 'destroy'
-
-.medium-editor-document
-  %h2= post.title
-  = post.body.html_safe
+    = link_to 'Destroy', post, method: :delete
+.post
+  .medium-editor-document
+    %h2= post.title
+    = post.body.html_safe

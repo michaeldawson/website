@@ -11,4 +11,15 @@ class Post < ApplicationRecord
   def to_param
     slug
   end
+
+  def parsed
+    Nokogiri::HTML.fragment(body)
+  end
+
+  # Temp - take all quotes and cat their content together
+  def summary
+    parsed.css('blockquote').map do |c|
+      "<blockquote>#{c.content}</blockquote>"
+    end.join("\r\n")
+  end
 end
