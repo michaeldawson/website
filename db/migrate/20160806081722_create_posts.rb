@@ -4,7 +4,7 @@ class CreatePosts < ActiveRecord::Migration[5.0]
       t.string :title
       t.datetime :posted
       t.string :category
-      t.text :body, limit: 4294967295
+      t.text :body
 
       t.timestamps
     end
