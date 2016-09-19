@@ -1,0 +1,8 @@
+.notification-bar-flash
+  - flash.each do |type, msg|
+    .alert{ class: 'alert-' + flash_class(type) }
+      .container-fluid
+        .row
+          .col-md-12
+            %button.close{ data: { dismiss: 'alert' } } &times;
+            = (msg.is_a?(Array) ? msg.to_sentence : msg.to_s).html_safe
