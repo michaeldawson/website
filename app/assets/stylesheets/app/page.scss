@@ -1,0 +1,17 @@
+body {
+  color: $text;
+}
+
+.page {
+  height: 100vh;
+  margin-left: 300px;
+}
+
+@media (max-width: 768px) {
+  .page {
+    margin-left: 0;
+    .posts {
+      padding: 20px;
+    }
+  }
+}

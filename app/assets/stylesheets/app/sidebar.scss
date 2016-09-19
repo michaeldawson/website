@@ -47,7 +47,7 @@
         top: -8px;
         position: absolute;
         color: $blue;
-        &.ion-ios-videocam-outline {
+        &.smaller {
           font-size: 22px;
           top: -5px;
         }
@@ -74,12 +74,6 @@
   }
 }
 
-.page {
-  height: 100vh;
-  margin-left: 300px;
-  
-}
-
 @media (max-width: 768px) {
   .sidebar {
     position: static;
@@ -95,12 +89,6 @@
       .social {
         position: static;
       }
-    }
-  }
-  .page {
-    margin-left: 0;
-    .posts {
-      padding: 20px;
     }
   }
 }
