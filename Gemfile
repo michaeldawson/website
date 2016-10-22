@@ -9,6 +9,7 @@ gem 'jbuilder', '~> 2.5'
 gem 'haml-rails'
 gem 'devise', '~> 4.2.0'
 gem 'nokogiri', '~> 1.6.8'
+gem 'dotenv'
 
 group :production do
   gem 'pg'
