@@ -4,6 +4,9 @@ require 'rails/all'
 
 Bundler.require(*Rails.groups)
 
+require 'dotenv'
+Dotenv::Railtie.load
+
 module Michael
   class Application < Rails::Application
     config.generators do |g|

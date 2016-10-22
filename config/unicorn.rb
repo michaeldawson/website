@@ -9,7 +9,6 @@ preload_app true
 timeout 30
 
 # Set up socket location
-listen ENV['PORT'] || 3000
 listen "#{shared_dir}/sockets/unicorn.sock", backlog: 64
 
 # Logging
