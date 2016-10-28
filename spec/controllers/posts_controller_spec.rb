@@ -57,24 +57,4 @@ RSpec.describe PostsController, type: :controller do
       expect(response).to have_http_status(:success)
     end
   end
-
-  describe 'POST #create' do
-    include_context 'when logged in'
-
-    context 'with valid params for a post' do
-      let(:params) { { post: { title: 'A new post', body: 'Some body' } } }
-
-      it 'creates the post' do
-        expect {
-          post :create, params: params
-        }.to change {
-          Post.count
-        }.by(1)
-
-        post = Post.last
-        expect(post.title).to eq(params[:post][:title])
-        expect(post.body).to eq(params[:post][:body])
-      end
-    end
-  end
 end

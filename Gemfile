@@ -22,20 +22,15 @@ group :development, :test do
 end
 
 group :development do
-  gem 'web-console'
-  gem 'listen', '~> 3.0.5'
-  gem 'spring'
-  gem 'spring-watcher-listen', '~> 2.0.0'
   gem 'overcommit', require: false
   gem 'reek', require: false
   gem 'rubocop', require: false
   gem 'haml_lint', require: false
   gem 'scss_lint', require: false
+  gem 'listen'
 end
 
 group :test do
   gem 'rspec-rails'
   gem 'capybara'
 end
-
-gem 'tzinfo-data'
