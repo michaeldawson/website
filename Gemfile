@@ -19,6 +19,7 @@ end
 group :development, :test do
   gem 'byebug'
   gem 'sqlite3'
+  gem 'capistrano', '~> 3.6'
 end
 
 group :development do
