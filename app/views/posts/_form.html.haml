@@ -1,6 +1,7 @@
 .row
-  .col-sm-5= form.text_field :title
-  .col-sm-5= form.text_field :slug, placeholder: 'Automatically generate'
+  .col-sm-4= form.text_field :title
+  .col-sm-3= form.select :category_id, Category.all.map{|c| [c.name, c.id]}
+  .col-sm-3= form.text_field :slug, placeholder: 'Automatically generate'
   .col-sm-2= form.submit "Save", class: 'btn btn-primary btn-block'
 
 = form.medium_editor :body

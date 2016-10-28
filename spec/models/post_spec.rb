@@ -4,6 +4,7 @@ RSpec.describe Post, type: :model do
   let(:post) { Post.new(valid_attributes) }
   let(:valid_attributes) {
     {
+      category: Category.new,
       title: 'A post',
       body: 'Some body',
       slug: 'some-slug'
@@ -44,6 +45,11 @@ RSpec.describe Post, type: :model do
 
     it "shouldn't be valid without a title" do
       valid_attributes[:title] = nil
+      expect(post).not_to be_valid
+    end
+
+    it "shouldn't be valid without a category" do
+      valid_attributes[:category] = nil
       expect(post).not_to be_valid
     end
 

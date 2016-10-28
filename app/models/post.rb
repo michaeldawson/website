@@ -1,7 +1,10 @@
 class Post < ApplicationRecord
+  belongs_to :category
+
   validates :title, presence: true
   validates :body, presence: true
   validates :slug, presence: true, format: { with: /\A[a-z|-]*\Z/ }
+  validates :category, presence: true
 
   before_validation :set_slug, if: -> { title.present? && slug.blank? }
   def set_slug
