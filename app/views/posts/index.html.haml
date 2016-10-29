@@ -4,6 +4,6 @@
       .medium-editor-document
         %h2= link_to post.title, post
         .layout-single-column
-          = post.summary.html_safe
-          %p
-            %em= link_to 'Read more...', post
+          = post.body.html_safe
+          -# %p
+          -#   %em= link_to 'Read more...', post
