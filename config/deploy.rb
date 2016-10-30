@@ -11,9 +11,10 @@ set :rbenv_prefix, "RBENV_ROOT=#{fetch(:rbenv_path)} RBENV_VERSION=#{fetch(:rben
 set :rbenv_map_bins, %w{rake gem bundle ruby rails}
 append :linked_files, '.env'
 
-Rake::Task["unicorn:restart"].clear_actions
+
 namespace :unicorn do
   %w[start stop restart reload].each do |command|
+    Rake::Task["unicorn:#{command}"].clear_actions
     desc "#{command} unicorn"
     task command do
       on roles :app do
