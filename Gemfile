@@ -9,15 +9,14 @@ gem 'jbuilder', '~> 2.5'
 gem 'haml-rails'
 gem 'devise', '~> 4.2.0'
 gem 'nokogiri', '~> 1.6.8'
+gem 'pg'
 
 group :production do
-  gem 'mysql2'
   gem 'unicorn'
 end
 
 group :development, :test do
   gem 'byebug'
-  gem 'sqlite3'
 end
 
 group :development do
