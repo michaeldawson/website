@@ -10,9 +10,10 @@ gem 'haml-rails'
 gem 'devise', '~> 4.2.0'
 gem 'nokogiri', '~> 1.6.8'
 gem 'pg'
+gem 'unicorn'
 
 group :production do
-  gem 'unicorn'
+  gem 'rails_12factor'
 end
 
 group :development, :test do
