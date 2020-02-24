@@ -8,7 +8,7 @@ gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.5'
 gem 'haml-rails'
 gem 'devise', '~> 4.5.0'
-gem 'nokogiri', '~> 1.8.4'
+gem 'nokogiri', '~> 1.10.8'
 gem 'pg'
 gem 'unicorn'
 
