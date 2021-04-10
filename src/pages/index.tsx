@@ -1,110 +1,169 @@
 import { ClippyProvider, useClippy } from "@react95/clippy";
-import {
-  Frame,
-  GlobalStyle,
-  Icon,
-  List,
-  Modal,
-  TaskBar,
-  ThemeProvider,
-} from "@react95/core";
+import { GlobalStyle, List, TaskBar, ThemeProvider } from "@react95/core";
 import "@react95/icons/icons.css";
-import useInterval from "@use-it/interval";
-import styled from "@xstyled/styled-components";
+import { map, pick, values, without } from "lodash";
 import * as React from "react";
+import DesktopIcon from "../components/DesktopIcon";
+import ExplorerProgram from "../components/ExplorerProgram";
+import FreecellProgram from "../components/FreecellProgram";
+import { default as TextProgram } from "../components/TextProgram";
+import VirusProgram from "../components/VirusProgram";
 import useWindowSize from "../utils/useWindowSize";
-import harlemShake from "../viruses/harlemShake";
 
 const CLIPPY_WISDOM = [
   "Hi! It looks like you're too young to remember clippy. Would you like some help getting off my lawn?",
   "Perhaps it is the file that exists, and you who do not?",
 ];
 
-const IconContainer = styled.button`
-  display: inline-flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 4;
-  width: 70px;
-  height; 70px;
-  border: none;
-  background-color: transparent;
+interface Program {
+  type: React.ComponentType;
+  title: string;
+  children?: React.ReactNode;
+}
 
-  i,
-  :hover {
-    cursor: pointer;
-  }
+const programs = {
+  about: {
+    type: TextProgram,
+    title: "about.txt",
+    children: () => (
+      <>
+        <p>
+          Hi! I'm a software developer, currently lead engineer at{" "}
+          <a target="_blank" href="http://airrobe.com">
+            AirRobe.
+          </a>
+        </p>
 
-  i {
-    margin-bottom: 8;
-  }
-`;
+        <p>
+          I'm really passionate about web, mobile, and hardware technologies.{" "}
+          <a href="#">Here's an overview</a> of a few technologies that I think
+          are great to work with.
+        </p>
+
+        <p>
+          I'm a member of the Collaborative VC{" "}
+          <a href="https://hitchhiker.vc">Hitchhiker</a>, and am always
+          interested in hearing about interesting projects that people are up
+          to. Feel free to{" "}
+          <a target="_blank" href="mailto:hi@michaeldawson.com.au">
+            drop me a line!
+          </a>
+        </p>
+      </>
+    ),
+  },
+  explorer: {
+    type: ExplorerProgram,
+    title: "Windows Explorer",
+    children: ({ openProgram }) => (
+      <>
+        <DesktopIcon
+          handleClick={() => openProgram("airrobe")}
+          iconName="file_pencil_32x32_4bit"
+          name="airrobe.txt"
+        />
+        <DesktopIcon
+          handleClick={() => openProgram("whatIveLearned")}
+          iconName="file_pencil_32x32_4bit"
+          name="whatIveLearned.txt"
+        />
+      </>
+    ),
+  },
+  recycleBin: {
+    type: ExplorerProgram,
+    title: "Recycle Bin",
+    children: ({ openProgram }) => (
+      <DesktopIcon
+        handleClick={() => openProgram("virus")}
+        iconName="progman_19_32x32_1bit"
+        name="virus.exe"
+      />
+    ),
+  },
+  freecell: {
+    type: FreecellProgram,
+    title: "Freecell",
+  },
+  airrobe: {
+    type: TextProgram,
+    title: "AirRobe",
+    children: () => (
+      <>
+        <p>
+          AirRobe is a sustainable fashion startup that is one to watch in{" "}
+          {new Date().getFullYear()}. We're integrating with fashion retailers
+          to provide a "virtual wardrobe". Purchases that you make can be added
+          to your virtual wardrobe with just a few clicks, and re-sold or rented
+          with a few clicks later.
+        </p>
+        <p>
+          <a target="_blank" href="https://airrobe.com">
+            Check it out
+          </a>
+        </p>
+      </>
+    ),
+  },
+  whatIveLearned: {
+    type: TextProgram,
+    title: "what-ive-learned.txt",
+    children: () => (
+      <>
+        <p>
+          Here are a few topics that I find interesting. Your Mileage May Vary!
+        </p>
+        <p>
+          <a href="https://core.ac.uk/download/pdf/162652247.pdf">Fasting</a> is
+          possibly one of the easiest ways to improve the length and quality of
+          your.
+        </p>
+        <p>
+          Sleeping on hard surfaces, for example, on the floor with a thin yoga
+          mat, might help with back and neck problems.
+        </p>
+        <p>
+          Body, neck, face and tongue posture might be{" "}
+          <a
+            href="https://www.youtube.com/watch?v=TY3bIMRKil8&ab_channel=21Studios"
+            target="_blank"
+          >
+            more important than we once thought
+          </a>
+          . Also, try to chew tough, chewy foods!
+        </p>
+      </>
+    ),
+  },
+  virus: {
+    type: VirusProgram,
+    title: "Virus",
+  },
+};
+
+type ProgramName = keyof typeof programs;
 
 function Homepage() {
-  if (typeof window !== "undefined") {
-    (window as any).CLIPPY_CDN = "./static/clippy/agents/";
-  }
-
   const { clippy } = useClippy();
-
-  const [first, toggleFirst] = React.useState(false);
-  const [freecell, toggleFreecell] = React.useState(false);
-  const [airrobe, toggleAirrobe] = React.useState(false);
-  const [recycle, toggleRecycle] = React.useState(false);
-  const [about, toggleAbout] = React.useState(true);
-  const [bjj, toggleBjj] = React.useState(false);
-  const [impulse, toggleImpulse] = React.useState(false);
-
   const size = useWindowSize();
 
-  useInterval(() => {
-    clippy.speak(CLIPPY_WISDOM[1]);
-  }, 60 * 10000);
+  const [openProgramNames, setOpenProgramNames] = React.useState<
+    Array<ProgramName>
+  >(["about"]);
 
-  const closeFirst = () => toggleFirst(false);
-  const closeFreecell = () => toggleFreecell(false);
+  const openProgram = (programName: ProgramName) =>
+    setOpenProgramNames([...openProgramNames, programName]);
 
-  function notAVirus() {
-    setTimeout(() => clippy.play("LookUp"), 1000);
-    setTimeout(() => clippy.speak("Oh no"), 2000);
-    setTimeout(() => clippy.play("Idle"), 4000);
+  const closeProgram = (programName: ProgramName) =>
+    setOpenProgramNames(without(openProgramNames, programName));
 
-    setTimeout(() => clippy.speak("What did you do"), 6000);
-    setTimeout(() => clippy.play("LookDownLeft"), 7000);
-    setTimeout(() => clippy.speak("I'm not hanging around for this"), 10400);
-    setTimeout(() => clippy.play("EmptyTrash"), 10500);
-    setTimeout(() => clippy.hide(), 14400);
-    setTimeout(() => clippy.show(), 35000);
-
-    setTimeout(
-      () =>
-        clippy.speak("But did you think anything good was going to happen?"),
-      50000
-    );
-
-    harlemShake();
-  }
+  const openPrograms: Array<Program> = values(pick(programs, openProgramNames));
 
   React.useEffect(() => {
-    if (!clippy) return;
-
-    if (typeof window !== "undefined") {
-      window.clippy = clippy;
-      window.harlemShake = harlemShake;
-      window.clippy._balloon._targetEl[0].addEventListener("click", () =>
-        clippy.animate()
-      );
+    if (clippy && typeof window !== "undefined") {
+      clippy._el[0].addEventListener("click", clippy.animate);
     }
   }, [clippy]);
-
-  const iconStyle = {
-    style: {
-      width: 40,
-      height: 40,
-      marginRight: 4,
-    },
-  };
 
   return (
     <ThemeProvider>
@@ -113,38 +172,26 @@ function Homepage() {
       <div style={{ height: "80vh" }}>
         <div style={{ display: "flex" }}>
           {size.width > 768 && (
-            <IconContainer style={{ color: "white" }}>
-              <Icon
-                name="freecell_1_32x32_4bit"
-                className="draggable"
-                onClick={() => toggleFreecell(true)}
-                {...iconStyle}
-              />
-              Freecell
-            </IconContainer>
-          )}
-          <IconContainer style={{ color: "white" }}>
-            <Icon
-              name="file_pencil_32x32_4bit"
-              className="draggable"
-              onClick={() => toggleAbout(true)}
-              {...iconStyle}
+            <DesktopIcon
+              name="Freecell"
+              iconName="freecell_1_32x32_4bit"
+              handleClick={() => openProgram("freecell")}
+              white
             />
-            about.txt
-          </IconContainer>
+          )}
+          <DesktopIcon
+            name="about.txt"
+            iconName="file_pencil_32x32_4bit"
+            handleClick={() => openProgram("about")}
+            white
+          />
+
           <div style={{ flexGrow: 1 }} />
           <a
             href="https://www.linkedin.com/in/michael-dawson-36453224/"
             target="_blank"
           >
-            <IconContainer style={{ color: "white" }}>
-              <Icon
-                name="web_open_16x16_4bit"
-                className="draggable"
-                {...iconStyle}
-              />
-              LinkedIn
-            </IconContainer>
+            <DesktopIcon name="LinkedIn" iconName="web_open_16x16_4bit" white />
           </a>
         </div>
         <div
@@ -155,217 +202,31 @@ function Homepage() {
             height: "80%",
           }}
         >
-          <IconContainer style={{ color: "white" }}>
-            <Icon
-              name="recycle_full_32x32_4bit"
-              className="draggable"
-              onClick={() => toggleRecycle(true)}
-              {...iconStyle}
-            />
-            Recycle Bin
-          </IconContainer>
+          <DesktopIcon
+            name="Recycle Bin"
+            iconName="recycle_full_32x32_4bit"
+            handleClick={() => openProgram("recycleBin")}
+            white
+          />
         </div>
       </div>
 
-      {first && (
-        <Modal
-          icon="windows_explorer_32x32_4bit"
-          title="Windows Explorer"
-          closeModal={closeFirst}
-          width="300"
-          height="200"
-        >
-          <Frame
-            height="100%"
-            boxShadow="in"
-            bg="white"
-            style={{ display: "flex" }}
+      {map(openPrograms, (program, programName: ProgramName) => {
+        const ProgramType = program.type;
+        return (
+          <ProgramType
+            title={program.title}
+            handleClose={() => {
+              console.log(program);
+              console.log(programName);
+              closeProgram(programName);
+              debugger;
+            }}
           >
-            <IconContainer>
-              <Icon
-                name="file_pencil_32x32_4bit"
-                className="draggable"
-                onClick={() => toggleAirrobe(true)}
-                {...iconStyle}
-              />
-              AirRobe
-            </IconContainer>
-
-            <IconContainer>
-              <Icon
-                name="file_pencil_32x32_4bit"
-                className="draggable"
-                onClick={() => toggleBjj(true)}
-                {...iconStyle}
-              />
-              BJJ.AI
-            </IconContainer>
-
-            <IconContainer>
-              <Icon
-                name="file_pencil_32x32_4bit"
-                className="draggable"
-                onClick={() => toggleImpulse(true)}
-                {...iconStyle}
-              />
-              Impulse
-            </IconContainer>
-          </Frame>
-        </Modal>
-      )}
-
-      {recycle && (
-        <Modal
-          icon="recycle_full_32x32_4bit"
-          title="Recycle Bin"
-          width={Math.min(500, size.width).toString()}
-          height="300"
-          closeModal={() => toggleRecycle(false)}
-        >
-          <Frame
-            height="100%"
-            boxShadow="in"
-            bg="white"
-            style={{ display: "flex" }}
-          >
-            <IconContainer onClick={notAVirus}>
-              <Icon
-                name="progman_19_32x32_1bit"
-                className="draggable"
-                {...iconStyle}
-              />
-              virus.exe
-            </IconContainer>
-          </Frame>
-        </Modal>
-      )}
-
-      {freecell && (
-        <Modal
-          icon="freecell_1_32x32_4bit"
-          title="Freecell"
-          width={size.width}
-          height={Math.min(
-            (size.width / 4) * 3,
-            (size.height / 7) * 6
-          ).toString()}
-          closeModal={closeFreecell}
-          style={{
-            padding: 0,
-          }}
-        >
-          <iframe
-            style={{ height: "100%", width: "100%" }}
-            src="https://online-solitaire.com/freecell"
-          ></iframe>
-        </Modal>
-      )}
-
-      {about && (
-        <Modal
-          defaultPosition={{ x: 50, y: 50 }}
-          width="300"
-          height="200"
-          icon="reader_closed_32x32_4bit"
-          title="about.txt"
-          closeModal={() => toggleAbout(false)}
-        >
-          <Frame
-            height="100%"
-            boxShadow="in"
-            bg="white"
-            style={{ paddingLeft: 4, paddingRight: 4 }}
-          >
-            <p>
-              Hi! I'm a software developer, currently lead engineer at{" "}
-              <a target="_blank" href="http://airrobe.com">
-                AirRobe.
-              </a>
-            </p>
-
-            <p>
-              I'm am a member of the Collaborative VC{" "}
-              <a href="https://hitchhiker.vc">Hitchhiker</a>, and am always
-              interested in hearing about interesting projects that people are
-              up to. Feel free to{" "}
-              <a target="_blank" href="mailto:hi@michaeldawson.com.au">
-                drop me a line!
-              </a>
-            </p>
-
-            <p>
-              I'm also working on a couple of side project apps,{" "}
-              <a href="https://bjj.ai" target="_blank">
-                BJJ.AI
-              </a>{" "}
-              and <a href="https://impulse.training">Impulse</a>.
-            </p>
-          </Frame>
-        </Modal>
-      )}
-
-      {airrobe && (
-        <Modal
-          defaultPosition={{ x: 50, y: 50 }}
-          width="300"
-          height="200"
-          icon="reader_closed_32x32_4bit"
-          title="AirRobe.txt"
-          closeModal={() => toggleAirrobe(false)}
-        >
-          <Frame height="100%" boxShadow="in" bg="white">
-            <p>
-              AirRobe is a sustainable fashion startup that is one to watch in{" "}
-              {new Date().getFullYear()}. We're integrating with ethical fashion
-              merchants to provide a "virtual wardrobe". Purchases that you make
-              can be added to your virtual wardrobe with just a few clicks, and
-              re-sold or rented with a few clicks later.
-            </p>
-            <p>
-              <a href="https://airrobe.com">Check it out</a>
-            </p>
-          </Frame>
-        </Modal>
-      )}
-
-      {bjj && (
-        <Modal
-          defaultPosition={{ x: 50, y: 50 }}
-          width="300"
-          height="200"
-          icon="reader_closed_32x32_4bit"
-          title="AirRobe.txt"
-          closeModal={() => toggleAirrobe(false)}
-        >
-          <Frame height="100%" boxShadow="in" bg="white">
-            <p>
-              BJJ.AI is a work-in-progress app for Brazilian Jiu Jitsu students
-              and clubs.
-            </p>
-            <p>
-              <a href="https://bjj.ai">Check it out</a>
-            </p>
-          </Frame>
-        </Modal>
-      )}
-
-      {impulse && (
-        <Modal
-          defaultPosition={{ x: 50, y: 50 }}
-          width="300"
-          height="200"
-          icon="reader_closed_32x32_4bit"
-          title="AirRobe.txt"
-          closeModal={() => toggleAirrobe(false)}
-        >
-          <Frame height="100%" boxShadow="in" bg="white">
-            <p>Impulse is a work-in-progress app to help with addictions.</p>
-            <p>
-              <a href="https://impulse.training">Check it out</a>
-            </p>
-          </Frame>
-        </Modal>
-      )}
+            {program.children ? program.children({ openProgram }) : null}
+          </ProgramType>
+        );
+      })}
 
       <TaskBar
         list={
@@ -373,7 +234,7 @@ function Homepage() {
             <List.Item
               icon="windows_explorer_32x32_4bit"
               onClick={() => {
-                toggleFirst(true);
+                openProgram("explorer");
               }}
             >
               Windows Explorer

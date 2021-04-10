@@ -1,4 +1,4 @@
-export default function NotAVirus() {
+export default function HarlemShake() {
   function c() {
     var e = document.createElement("link");
     e.setAttribute("type", "text/css");
