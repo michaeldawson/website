@@ -13,7 +13,7 @@ import useInterval from "@use-it/interval";
 import styled from "@xstyled/styled-components";
 import * as React from "react";
 import useWindowSize from "../utils/useWindowSize";
-import NotAVirus from "../viruses/harlemShake";
+import harlemShake from "../viruses/harlemShake";
 
 const CLIPPY_WISDOM = [
   "Hi! It looks like you're too young to remember clippy. Would you like some help getting off my lawn?",
@@ -42,7 +42,9 @@ const IconContainer = styled.button`
 `;
 
 function Homepage() {
-  (window as any).CLIPPY_CDN = "./static/clippy/agents/";
+  if (typeof window !== "undefined") {
+    (window as any).CLIPPY_CDN = "./static/clippy/agents/";
+  }
 
   const { clippy } = useClippy();
 
@@ -63,10 +65,25 @@ function Homepage() {
   const closeFirst = () => toggleFirst(false);
   const closeFreecell = () => toggleFreecell(false);
 
-  function harlemShake() {
-    setTimeout(() => clippy.speak("Oh no"), 4000);
-    setTimeout(() => clippy.speak("I really apologise for this"), 13000);
-    NotAVirus();
+  function notAVirus() {
+    setTimeout(() => clippy.play("LookUp"), 1000);
+    setTimeout(() => clippy.speak("Oh no"), 2000);
+    setTimeout(() => clippy.play("Idle"), 4000);
+
+    setTimeout(() => clippy.speak("What did you do"), 6000);
+    setTimeout(() => clippy.play("LookDownLeft"), 7000);
+    setTimeout(() => clippy.speak("I'm not hanging around for this"), 10400);
+    setTimeout(() => clippy.play("EmptyTrash"), 10500);
+    setTimeout(() => clippy.hide(), 14400);
+    setTimeout(() => clippy.show(), 35000);
+
+    setTimeout(
+      () =>
+        clippy.speak("But did you think anything good was going to happen?"),
+      50000
+    );
+
+    harlemShake();
   }
 
   React.useEffect(() => {
@@ -74,7 +91,7 @@ function Homepage() {
 
     if (typeof window !== "undefined") {
       window.clippy = clippy;
-      window.NotAVirus = NotAVirus;
+      window.harlemShake = harlemShake;
       window.clippy._balloon._targetEl[0].addEventListener("click", () =>
         clippy.animate()
       );
@@ -211,7 +228,7 @@ function Homepage() {
             bg="white"
             style={{ display: "flex" }}
           >
-            <IconContainer onClick={harlemShake}>
+            <IconContainer onClick={notAVirus}>
               <Icon
                 name="progman_19_32x32_1bit"
                 className="draggable"
@@ -228,13 +245,19 @@ function Homepage() {
           icon="freecell_1_32x32_4bit"
           title="Freecell"
           width={size.width}
-          height={((size.width / 4) * 6).toString()}
+          height={Math.min(
+            (size.width / 4) * 3,
+            (size.height / 7) * 6
+          ).toString()}
           closeModal={closeFreecell}
           style={{
             padding: 0,
           }}
         >
-          <iframe src="https://online-solitaire.com/freecell"></iframe>
+          <iframe
+            style={{ height: "100%", width: "100%" }}
+            src="https://online-solitaire.com/freecell"
+          ></iframe>
         </Modal>
       )}
 
