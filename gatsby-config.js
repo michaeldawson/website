@@ -12,9 +12,9 @@ module.exports = {
         trackingId: "G-VJFVM9VE7E",
       },
     },
-    "gatsby-plugin-react-helmet",
-    "gatsby-plugin-sitemap",
-    "gatsby-transformer-remark",
+    // "gatsby-plugin-react-helmet",
+    // "gatsby-plugin-sitemap",
+    // "gatsby-transformer-remark",
     "gatsby-plugin-sharp",
     "gatsby-transformer-sharp",
     {
