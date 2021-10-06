@@ -1,0 +1,18 @@
+body {
+  margin: 0;
+  font-family: "Smoopy", "Lucida Sans Typewriter", monaco,
+    "Bitstream Vera Sans Mono", monospace;
+}
+
+@font-face {
+  src: url("/LucidaConsole.ttf") format("ttf") url("/LucidaConsole.woff")
+    format("woff") url("/LucidaConsole.woff2") format("woff2");
+  font-family: "Smoopy";
+  font-weight: 500;
+  font-style: normal;
+}
+
+p {
+  margin-top: 4px;
+  margin-bottom: 4px;
+}
