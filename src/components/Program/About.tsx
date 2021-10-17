@@ -12,17 +12,20 @@ export default function AboutProgram({ handleClose }: any) {
       </P>
 
       <P>
-        I'm also working on a side project to help people overcoming addictions,
-        called "Impulse".
+        I'm also working on a project to help people overcome addictions and
+        unhelpful thought patterns, called{" "}
+        <a target="_blank" href="https://impulse.training">
+          Impulse.
+        </a>
       </P>
 
       <P>
         I work with web, mobile and hardware technologies. My specialties /
-        focus areas are:
+        current focus areas are:
         <ul>
           <li>React Native</li>
           <li>Typescript / Javascript</li>
-          <li>React / Gatsby / Next</li>
+          <li>React / Gatsby / Next.js</li>
           <li>Web components / Lit</li>
           <li>Ruby / Rails</li>
           <li>SQL / Databases</li>

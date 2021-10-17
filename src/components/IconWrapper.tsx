@@ -42,7 +42,7 @@ export default function IconWrapper({
   );
 }
 
-const IconContainer = styled.button`
+const IconContainer = styled.span`
   display: inline-flex;
   flex-direction: column;
   justify-content: center;

@@ -12,7 +12,6 @@ import { Helmet } from "react-helmet";
 import { v4 as uuidv4 } from "uuid";
 // import clippy from "clippyjs";
 // import "../clippy/clippy";
-import AirRobeIcon from "../components/Icons/AirRobe";
 import IconWrapper from "../components/IconWrapper";
 import * as Programs from "../components/Program";
 import me from "../images/me.jpeg";
@@ -74,7 +73,6 @@ export default function Homepage({
           >
             <FileText />
           </IconWrapper>
-          <AirRobeIcon handleDoubleClick={() => openProgram("AirRobe")} />
           {/* <IconWrapper
             white
             name="Impulse.txt"
