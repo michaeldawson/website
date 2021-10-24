@@ -17,7 +17,10 @@ export default function NotFoundPage({ location: { href } }) {
       <br />
       <p>
         I refuse to believe that my site might be broken. Why not go back to the
-        home page and start again.
+        <a href="/" style={{ marginLeft: 15 }}>
+          home page
+        </a>{" "}
+        and start again.
       </p>
     </main>
   );

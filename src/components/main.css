@@ -6,6 +6,7 @@ h4 {
 }
 
 h2 {
+  margin-top: 40px;
   margin-bottom: 30px;
 }
 
@@ -39,4 +40,11 @@ img[src="/clothes.png"] {
 
 img[src="/airrobe-widget.png"] {
   max-width: 500px;
+}
+
+@media (max-width: 768px) {
+  img[src="/the-loop.png"] {
+    width: 100%;
+    margin: 20px 0;
+  }
 }

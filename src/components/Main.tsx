@@ -45,9 +45,13 @@ export default function Main({
 
   const [openPrograms, setOpenPrograms] = useState<Array<OpenProgram>>([]);
 
+  function setSlug(slug: string) {
+    history?.push("/" + slug);
+  }
+
   const openProgram = (name: ProgramName, props = undefined) => {
-    if (props?.post?.frontmatter?.slug && history)
-      history.push(props?.post?.frontmatter?.slug);
+    setSlug(props?.post?.frontmatter?.slug);
+
     setOpenPrograms([...openPrograms, { pid: uuidv4(), name, props }]);
   };
 
@@ -124,10 +128,7 @@ export default function Main({
         createElement(Programs[name] as any, {
           key: index,
           handleClose: () => closeProgram(pid),
-          handleClick: () => {
-            if (props?.post?.frontmatter?.slug && history)
-              history.push(props.post.frontmatter.slug);
-          },
+          handleClick: () => setSlug(props?.post?.frontmatter?.slug),
           openProgram,
           ...props,
         })
