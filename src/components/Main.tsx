@@ -30,6 +30,11 @@ type OpenProgram = {
   props?: any;
 };
 
+const history =
+  typeof document === "undefined"
+    ? null
+    : require("history").createBrowserHistory();
+
 export default function Main({
   data: {
     allMarkdownRemark: { edges },
@@ -40,8 +45,11 @@ export default function Main({
 
   const [openPrograms, setOpenPrograms] = useState<Array<OpenProgram>>([]);
 
-  const openProgram = (name: ProgramName, props = undefined) =>
+  const openProgram = (name: ProgramName, props = undefined) => {
+    if (props?.post?.frontmatter?.slug && history)
+      history.push(props?.post?.frontmatter?.slug);
     setOpenPrograms([...openPrograms, { pid: uuidv4(), name, props }]);
+  };
 
   const closeProgram = (processId: string) =>
     setOpenPrograms(openPrograms.filter(({ pid }) => processId !== pid));
@@ -116,6 +124,10 @@ export default function Main({
         createElement(Programs[name] as any, {
           key: index,
           handleClose: () => closeProgram(pid),
+          handleClick: () => {
+            if (props?.post?.frontmatter?.slug && history)
+              history.push(props.post.frontmatter.slug);
+          },
           openProgram,
           ...props,
         })

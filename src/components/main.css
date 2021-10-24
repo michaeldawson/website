@@ -32,3 +32,11 @@ img[src="/the-loop.png"] {
   width: 60%;
   margin: 50px 20%;
 }
+
+img[src="/clothes.png"] {
+  width: 100%;
+}
+
+img[src="/airrobe-widget.png"] {
+  max-width: 500px;
+}
