@@ -49,7 +49,7 @@ export default function Main({
   const Posts = edges.filter((edge) => !!edge.node.frontmatter.date); // You can filter your posts based on some criteria
 
   useEffect(() => {
-    openProgram("Post", { post: markdownRemark });
+    if (markdownRemark) openProgram("Post", { post: markdownRemark });
   }, [markdownRemark]);
 
   return (

@@ -12,6 +12,7 @@ export const pageQuery = graphql`
         date(formatString: "MMMM DD, YYYY")
         slug
         title
+        subtitle
       }
     }
     allMarkdownRemark(sort: { order: DESC, fields: [frontmatter___date] }) {
@@ -24,6 +25,7 @@ export const pageQuery = graphql`
             date(formatString: "MMMM DD, YYYY")
             slug
             title
+            subtitle
             icon
           }
         }
