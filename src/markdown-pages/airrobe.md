@@ -1,8 +1,8 @@
 ---
-slug: "/blog/impulse"
+slug: "airrobe"
 date: "2021-10-01"
 title: "AirRobe"
-icon: QuestionBubble_32x32_32
+icon: RecycleEmpty_32x32_4
 ---
 
 # AirRobe

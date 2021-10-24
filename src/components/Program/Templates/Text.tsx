@@ -6,8 +6,8 @@ import useWindowSize from "../../../utils/useWindowSize";
 export default function TextProgram({ title, handleClose, children }) {
   const { width, height } = useWindowSize();
 
-  const modalWidth = width < 500 ? width : 500;
-  const modalHeight = (height * 80) / 100;
+  const modalWidth = width < 500 ? width : width * 0.8;
+  const modalHeight = (height * 85) / 100;
 
   return (
     <Modal
@@ -22,8 +22,8 @@ export default function TextProgram({ title, handleClose, children }) {
         boxShadow="in"
         bg="white"
         style={{
-          paddingLeft: 4,
-          paddingRight: 4,
+          paddingLeft: 20,
+          paddingRight: 20,
           fontSize: 15,
           overflowY: "scroll",
           height: modalHeight - 33,
