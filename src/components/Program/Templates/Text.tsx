@@ -2,6 +2,7 @@ import { Frame, Modal } from "@react95/core";
 import styled from "@xstyled/styled-components";
 import React from "react";
 import useWindowSize from "../../../utils/useWindowSize";
+import * as classes from "./Text.module.css";
 
 export default function TextProgram({
   title,
@@ -30,11 +31,8 @@ export default function TextProgram({
           height="100%"
           boxShadow="in"
           bg="white"
+          className={classes.frame}
           style={{
-            paddingLeft: 20,
-            paddingRight: 20,
-            fontSize: 15,
-            overflowY: "scroll",
             height: modalHeight - 33,
           }}
         >

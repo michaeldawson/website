@@ -16,3 +16,18 @@ p {
   margin-top: 4px;
   margin-bottom: 4px;
 }
+
+main {
+  background: #000080;
+  color: white;
+  padding: 96px;
+  height: 100vh;
+  overflow: scroll;
+  word-wrap: break-word;
+}
+
+@media (max-width: 768px) {
+  main {
+    padding: 30px;
+  }
+}
