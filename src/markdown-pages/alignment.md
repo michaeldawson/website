@@ -1,5 +1,5 @@
 ---
-slug: "moderation"
+slug: "alignment"
 date: "2021-10-24"
 title: Moderation is a lie
 subtitle: ...It's "Alignment" that can set you free
@@ -53,7 +53,7 @@ Firstly, I needed to recognise the things that were not serving my goals and my 
 
 Secondly, I needed to be prepared for those _Impulse_ moments in which my old patterns of thinking are triggered, and my brain just _really wants_ to go down that old, familiar path - regardless of the consequences. I needed a list of _"Tactics"_ for these moments, and I think of it as the "rail" to the _right_.
 
-Finally, I needed to identify, out of all the possibilities that lie between those two "guiding" rails, what things are especially positive for me? What things that genuinely lift me up, boost my defences and also simply increase my quality of life? I call this third list my _"Boosters"_, and I think of it as the special "power-rail" running in between the others - the one that can super-charge the train running above.
+Finally, I needed to identify, out of all the possibilities that lie between those two "guiding" rails, what things are especially positive for me? What things genuinely lift me up, boost my defences and also simply increase my quality of life? I call this third list my _"Boosters"_, and I think of it as the special "power-rail" running in between the others - the one that can super-charge the train running above.
 
 So let's explore these three concepts in a bit more detail.
 
