@@ -35,13 +35,29 @@ img[src="/the-loop.png"] {
 }
 
 img[src="/rails.png"] {
-  width: 50%;
-  margin: 0 25%;
+  width: 40%;
+  margin: 0 30%;
+}
+
+img[src="/guidelines.png"] {
+  width: 200px;
+  margin: 0 calc(50% - 100px);
+}
+
+img[src="/tactics.png"] {
+  width: 200px;
+  margin: 0 calc(50% - 100px);
 }
 
 img[src="/chess.png"] {
   width: 33%;
   margin: 0 33%;
+}
+
+img[src="/booster.png"] {
+  width: 33%;
+  margin: 0 33%;
+  filter: grayscale(1);
 }
 
 img[src="/clothes.png"] {

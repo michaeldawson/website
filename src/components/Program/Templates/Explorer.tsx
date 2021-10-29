@@ -13,10 +13,14 @@ export default function ExplorerProgram({
       title={title}
       closeModal={handleClose}
       width="300"
-      height="200"
+      height="400"
       {...rest}
     >
-      <Frame boxShadow="in" bg="white" style={{ height: "100%" }}>
+      <Frame
+        boxShadow="in"
+        bg="white"
+        style={{ height: "100%", overflowY: "scroll" }}
+      >
         {children}
       </Frame>
     </Modal>

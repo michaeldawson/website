@@ -10,7 +10,6 @@ import { Helmet } from "react-helmet";
 import { v4 as uuidv4 } from "uuid";
 import AirRobe from "../components/Icons/AirRobe";
 import Impulse from "../components/Icons/Impulse";
-import me from "../images/me.jpeg";
 import useWindowSize from "../utils/useWindowSize";
 // import clippy from "clippyjs";
 // import "../clippy/clippy";
@@ -54,6 +53,7 @@ export default function Main({
   const [openPrograms, setOpenPrograms] = useState<Array<OpenProgram>>([]);
 
   function setSlug(slug: string) {
+    if (!slug) return;
     history?.push("/" + slug);
   }
 
@@ -71,18 +71,19 @@ export default function Main({
     (post) => post.node.frontmatter.desktopIcon
   );
 
-  console.log(posts);
-
   const startBarPosts = posts.filter((post) => post.node.frontmatter.startBar);
 
   useEffect(() => {
     if (markdownRemark) openProgram("Post", { post: markdownRemark });
   }, [markdownRemark]);
 
+  const postTitle = markdownRemark?.frontmatter?.title;
+  const title = postTitle ? `${postTitle} | Michael Dawson` : "Michael Dawson";
+
   return (
     <ThemeProvider>
       <GlobalStyle></GlobalStyle>
-      <Helmet title="Michael Dawson" defer={false} />
+      <Helmet title={title} defer={false} />
 
       <div style={{ height: "80vh" }}>
         <div style={{ display: "flex" }}>
@@ -105,13 +106,6 @@ export default function Main({
               />
             );
           })}
-          {/* <IconWrapper
-            white
-            name="Impulse.txt"
-            handleDoubleClick={() => openProgram("Impulse")}
-          >
-            <FileText />
-          </IconWrapper> */}
 
           <div style={{ flexGrow: 1 }} />
           <a
@@ -128,16 +122,9 @@ export default function Main({
             display: "flex",
             justifyContent: "flex-end",
             alignItems: "flex-end",
-            height: "62%",
+            height: "95%",
           }}
         >
-          <IconWrapper
-            handleDoubleClick={() => openProgram("Me")}
-            name="me.jpeg"
-            white
-          >
-            <img src={me} style={{ width: "32px", height: "32px" }} />
-          </IconWrapper>
           <IconWrapper
             white
             name="Recycle Bin"

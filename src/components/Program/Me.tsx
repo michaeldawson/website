@@ -1,7 +1,7 @@
 import React from "react";
 import useWindowSize from "../../utils/useWindowSize";
 import me from ".././../images/me.jpeg";
-import ExplorerProgram from "./Templates/Explorer";
+import Text from "./Templates/Text";
 
 export default function Me({ handleClose }: any) {
   const { width, height } = useWindowSize();
@@ -9,13 +9,13 @@ export default function Me({ handleClose }: any) {
   const modalHeight = modalWidth * 0.8;
 
   return (
-    <ExplorerProgram
-      title="me.jpeg"
-      width={modalWidth}
-      height={modalHeight}
-      handleClose={handleClose}
-    >
+    <Text title="me.jpeg" handleClose={handleClose}>
       <img src={me} style={{ width: "100%" }} />
-    </ExplorerProgram>
+      <p>
+        This is my favourite place! If you'd like to know the story, and we're
+        out for a drink together, I will gladly share... in exchange for a story
+        about your favourite place :)
+      </p>
+    </Text>
   );
 }

@@ -1,5 +1,6 @@
 import { Progman17 } from "@react95/icons/esm/react/Progman17";
 import React from "react";
+import me from "../../images/me.jpeg";
 import IconWrapper from "../IconWrapper";
 import ExplorerProgram from "./Templates/Explorer";
 import runVirus from "./Virus";
@@ -9,6 +10,9 @@ export default function RecycleBin({ openProgram, handleClose }: any) {
 
   return (
     <ExplorerProgram title="Recycle Bin" handleClose={handleClose}>
+      <IconWrapper handleDoubleClick={() => openProgram("Me")} name="me.jpeg">
+        <img src={me} style={{ width: "32px", height: "32px" }} />
+      </IconWrapper>
       <IconWrapper
         handleDoubleClick={() => runVirus({ onFinished: () => {} })}
         name="notavirus.exe"
