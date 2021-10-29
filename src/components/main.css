@@ -34,6 +34,16 @@ img[src="/the-loop.png"] {
   margin: 50px 20%;
 }
 
+img[src="/rails.png"] {
+  width: 50%;
+  margin: 0 25%;
+}
+
+img[src="/chess.png"] {
+  width: 33%;
+  margin: 0 33%;
+}
+
 img[src="/clothes.png"] {
   width: 100%;
 }
