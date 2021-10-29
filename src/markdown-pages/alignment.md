@@ -3,6 +3,7 @@ slug: "alignment"
 date: "2021-10-24"
 title: Moderation is a lie
 subtitle: ...It's "Alignment" that can set you free
+startBar: 2
 icon: Url103_32x32_4
 ---
 
@@ -22,7 +23,7 @@ The idea being, of course, that often, a particular thing is not harmful in and 
 
 As kids, we often tried to use this to our advantage, to make a case for a certain little treat or indulgence. Sometimes it worked its magic, and we'd succeed:
 
-_“Well I suppose…”_ Her response would go... _“Everything in moderation!”_
+_“Well I suppose…”_ She would begin... _“Everything in moderation!”_
 
 But then one day, having negotiated such triumphs as “ice-cream every second night”, I dreamed up the boldest way yet to put this principle to the test: What about... “pizza in moderation”, “fried chicken in moderation”, “burgers in moderation”, “french fries in moderation”, and (... the best one) _“chocolate-for-dinner”_ ... (_in-moderation_ !!) ???
 
@@ -34,7 +35,7 @@ As I grew older, I began to get less interested in junk food "loopholes", and mo
 
 Sometimes, these loops can look a little like this:
 
-![image](/the-loop.png)
+![loop](/the-loop.png)
 
 You'll notice a part of the loop that I call the "Impulse". The Impulse is that moment when the old brain pathways fire up in response to the familiar _trigger_, and your brain is just raring to dive into that old familiar _action_ or pattern of thought - regardless of the consequences.
 
@@ -60,15 +61,17 @@ In the end, my real progress began when I realised that I needed more than what 
 
 So, what is this concept of Alignment? I like to picture it as a set of rails, like the ones that a train can run on.
 
-Firstly, I needed to recognise the things that were not serving my goals and my happiness, and then make a pledge to simply remove them from my life. I call this my list of _"Guidelines"_, and I think of it as the rail to the _left_.
+Firstly, I needed to recognise the things that were _not serving my goals and my happiness_, and then make a pledge to simply remove them from my life. I call this my list of _"Guidelines"_, and I think of it as the rail to the _left_.
 
 Secondly, I needed to be prepared for those _Impulse_ moments in which my old patterns of thinking are triggered, and my brain just _really wants_ to go down that old, familiar path. I needed a list of _"Tactics"_ for these moments, and I think of it as the rail to the _right_.
 
-Finally, I needed to identify, out of all the possibilities that lie between these two "guiding" rails, what things are especially positive for me? What things genuinely lift me up, boost my defences, and improve my life and maybe even the lives of those around me? I call this third list my _"Boosters"_, and I think of it as the special "[power-rail](https://en.wikipedia.org/wiki/Third_rail)" running next to the others - the one that can super-charge the train running above.
+Finally, I needed to identify, out of all the possibilities that lie between these two "guiding" rails, what things are especially positive for me - things that can lift me up, boost my defences, and just generally _improve my life_? I call this third list my _"Boosters"_, and I think of it as the special "[power-rail](https://en.wikipedia.org/wiki/Third_rail)" running alongside the other two.
 
 So let's explore these three concepts in a bit more detail.
 
 ## Guidelines
+
+![guidelines](/guidelines.png)
 
 When you identify a list of things that are unhelpful for you and your goals, and make a pledge to _completely avoid them_, you have yourself a set of _"Guidelines"_.
 
@@ -92,6 +95,8 @@ List as many as you like.
 
 ## Tactics
 
+![tactics](/tactics.png)
+
 If you got through that exercise, congratulations! But sometimes, simply knowing what you "should" avoid is the easy part. Sometimes, the real challenge is in actually sticking to our guidelines after we've defined them. That old familiar "Impulse" moment will come around again and again, when your brain's old "loop" wiring is triggered, and it just _can't wait_ to dive into that old familiar action or thought pattern. Some people think about two versions of themselves: a "higher" self that has perspective and self-control, and a second version, that seems to act automatically some times, and keeps us feeling stuck in our loops.
 
 If you can relate to any of this, the good news is: you're not alone! Something about these experiences is fundamentally _human_ in nature, and so the great thing is, we can all combine forces to share the _"Tactics"_ that we can deploy to break out of our loops in these critical moments, and get back to our "higher" or more "real" selves.
@@ -114,6 +119,8 @@ Try to list at least 3!
 
 ## Boosters
 
+![boosters](/boosters.png)
+
 Now for the fun part: between those guiding of _Guidelines_ and _Tactics_ rails is a third one, and in our train metaphor, it's the _"power-rail"_... you know, the little one that runs alongside the two guiding rails, the one that's electrified with super high voltage?
 
 This rail is made up of your _Boosters_ - all the little things that you can do during your day, to boost your defences, power up your positive energy, and also just _enjoy!_
@@ -134,7 +141,7 @@ Try to list at least 3, if you can.
 
 ## Wrapping up
 
-![image](/chess.png)
+![chess](/chess.png)
 
 Throughout history, many people have formed their own concepts of "Alignment". In sharing mine with you, I hope to keep the important conversation going!
 

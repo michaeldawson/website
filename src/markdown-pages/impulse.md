@@ -2,6 +2,7 @@
 slug: "impulse"
 date: "2021-10-01"
 title: "Impulse"
+desktopIcon: Impulse
 icon: Bulb_32x32_4
 ---
 

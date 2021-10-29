@@ -2,6 +2,7 @@
 slug: "about"
 date: "2021-10-24"
 title: "Nice to meet you"
+startBar: 1
 icon: Hand_32x32_4
 ---
 

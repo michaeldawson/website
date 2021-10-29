@@ -16,6 +16,8 @@ export const pageQuery = graphql`
             slug
             title
             subtitle
+            desktopIcon
+            startBar
             icon
           }
         }

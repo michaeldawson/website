@@ -9,11 +9,12 @@ export default function TextProgram({
   handleClose,
   handleClick,
   children,
+  isBig,
 }) {
   const { width, height } = useWindowSize();
 
-  const modalWidth = width < 500 ? width : width * 0.9;
-  const modalHeight = (height * 85) / 100;
+  const modalWidth = isBig ? (width < 500 ? width : width * 0.9) : 500;
+  const modalHeight = (height * (isBig ? 85 : 60)) / 100;
 
   return (
     <div

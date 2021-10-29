@@ -8,6 +8,8 @@ import { map } from "lodash";
 import React, { createElement, useEffect, useState } from "react";
 import { Helmet } from "react-helmet";
 import { v4 as uuidv4 } from "uuid";
+import AirRobe from "../components/Icons/AirRobe";
+import Impulse from "../components/Icons/Impulse";
 import me from "../images/me.jpeg";
 import useWindowSize from "../utils/useWindowSize";
 // import clippy from "clippyjs";
@@ -21,6 +23,12 @@ const CLIPPY_WISDOM = [
   "Hi there! Are you too young to remember clippy?",
   "Perhaps it is the file that exists, and you who do not?",
 ];
+
+// Hacky hacky hack
+const desktopIcons = {
+  AirRobe,
+  Impulse,
+};
 
 type ProgramName = keyof typeof Programs;
 
@@ -58,7 +66,14 @@ export default function Main({
   const closeProgram = (processId: string) =>
     setOpenPrograms(openPrograms.filter(({ pid }) => processId !== pid));
 
-  const Posts = edges.filter((edge) => !!edge.node.frontmatter.date); // You can filter your posts based on some criteria
+  const posts = edges.filter((edge) => !!edge.node.frontmatter.date); // You can filter your posts based on some criteria
+  const desktopPosts = posts.filter(
+    (post) => post.node.frontmatter.desktopIcon
+  );
+
+  console.log(posts);
+
+  const startBarPosts = posts.filter((post) => post.node.frontmatter.startBar);
 
   useEffect(() => {
     if (markdownRemark) openProgram("Post", { post: markdownRemark });
@@ -80,6 +95,16 @@ export default function Main({
               <FreecellIcon />
             </IconWrapper>
           )}
+          {desktopPosts.map((post) => {
+            const Icon = desktopIcons[post.node.frontmatter.desktopIcon];
+            return (
+              <Icon
+                handleDoubleClick={() =>
+                  openProgram("Post", { post: post.node })
+                }
+              />
+            );
+          })}
           {/* <IconWrapper
             white
             name="Impulse.txt"
@@ -137,7 +162,7 @@ export default function Main({
       <TaskBar
         list={
           <List>
-            {Posts.map(({ node }) => (
+            {startBarPosts.map(({ node }) => (
               <List.Item
                 key={node.frontmatter.slug}
                 icon={node.frontmatter.icon}
