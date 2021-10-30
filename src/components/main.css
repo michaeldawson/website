@@ -29,7 +29,7 @@ img[src="/impulse.png"] {
   margin: 0 20%;
 }
 
-img[src="/the-loop.png"] {
+img[src="/the-loop-hole.png"] {
   width: 55%;
   margin: 40px 22.5%;
 }
@@ -69,7 +69,7 @@ img[src="/airrobe-widget.png"] {
 }
 
 @media (max-width: 768px) {
-  img[src="/the-loop.png"] {
+  img[src="/the-loop-hole.png"] {
     width: 100%;
     margin: 20px 0;
   }

@@ -1,18 +1,15 @@
 ---
 slug: "alignment"
-date: "2021-10-29"
+date: "2021-10-30"
 title: Moderation is a lie
 subtitle: ...It's "Alignment" that can set you free
 startBar: 2
 icon: Url103_32x32_4
 ---
 
-<small>
-Heads up: This post isn't private, but it's not 100% intended for a public audience, either. It's a bit of a cross between a diary entry, a brain-dump, and a blog-post. I hope you find it interesting!
-</small>
+_Heads up: This post is a cross between a brain dump, a diary entry, and a blog-post, and isn't yet intended for a truly public audience. Since writing the first version, a few of these ideas have evolved, in ways that I would be glad to talk more about with you. In the meantime, I hope you find it interesting, and I would welcome_ <a href="mailto:hi@michaeldawson.com.au">any feedback!</a>
 
 <pre>
-
 
 
 </pre>
@@ -33,41 +30,41 @@ Unsurprisingly, mum wasn’t prepared to sanction such a scientific experiment. 
 
 As I grew older, I began to get less interested in junk food "loopholes", and more interested in other things, including the mental “loop-holes” that us humans can sometimes get stuck in. I mean the ones that sometimes look a little like this:
 
-![loop](/the-loop.png)
+![the-loop-hole](/the-loop-hole.png)
+
+Examples include chemical addictions (e.g. with alcohol, cigarettes or other substances), behavioural addictions (e.g. gambling, gaming, or internet addiction), but also - I would argue - other _unhelpful thought patterns_, such as ruminating on negative thoughts, anger-management issues, and other obsessions or compulsions. The degree to which these last examples are related to the "loop-holes" found in addictions is a topic that I am currently trying to understand better!
 
 You'll notice a part of the loop that I call the "Impulse". The Impulse is that moment when your old brain pathways fire up in response to that _familiar trigger_, and your brain is just raring to dive into that _familiar action_ regardless of the consequences.
 
-Sometimes the action involves a substance (like alcohol or cigarettes), but it can also include behaviours (like gaming, gambling, or even social media use). When I think about these loops, I think about anything that doesn't take us closer to where we want to be.
+You may identify some kinds of “loop-hole” patterns in yourself, or you may know others whose lives have been affected by them.
 
-You may identify some kinds of “loop” patterns in yourself, and may also know many people who have been affected by them in different ways.
-
-When I observed these patterns in myself, they would generally start innocently enough, but could easily cascade into something more difficult to manage. For me, one interesting example was online speed-chess. I would start playing games to relax, and then before I knew it, my brain was reenforcing a process whereby as soon as one game finished, I _started playing the next game_.
+When I observed them in myself, they would generally start innocently enough, but could develop into something more difficult to manage. For me, one interesting example was online speed-chess. I would start playing games to relax, and then before I knew it, my brain was reenforcing a process whereby as soon as one game finished, I _started playing the next game_.
 
 Pop quiz: _what's the limit for how many games of speed chess a human can play in one session?_
 
 Answer: **there is no limit.**
 
-I have no doubt that chess can remain a harmless or even positive and enriching pastime for many, but for me, the infinite possibilities - combined with the rapid-fire succession of novel moves - lead to a neurochemical “perfect storm” of dopamine, adrenaline, cortisol and friends, that was capable of shifting my brain out of “positive” territory and squarely into “unhelpful” land.
+I have no doubt that chess can remain a harmless or enriching pastime for many, but for me, the infinite possibilities - combined with the rapid-fire succession of novel moves - lead to a neurochemical “perfect storm” of dopamine, adrenaline, cortisol and friends, that was capable of shifting my brain out of “positive” territory and squarely into “unhelpful” land.
 
 As I grew older, I tried leaning on the maxim of “moderation” in the hope that it would “guard” me from these sorts of excesses and their consequences:
 
 - _“Your policy should be: just a few games, here and there...”_
-- _“Make sure you limit your playing to 1 hour today, so you have time for other important things. Given that you’ve exceeded that limit now, 3 hours should **definitely** be the limit for today!”_
+- _“Make sure you limit your playing to 1 hour today, so you have time for other important things. Given that you’ve exceeded that limit now, 3 hours should **definitely** be the limit!”_
 - _“And above all, never forget: Everything in moderation!”_
 
 ## Alignment
 
 ![image](/rails.png)
 
-In the end, my real progress began when I realised that I needed more than what Mother Moderation could offer me. And that's when I began to form my own principles of _Alignment_, which went on to form the foundation of the [Impulse App](https://impulse.training).
+In the end, my real progress began when I realised that I needed more than what Mother Moderation could offer me. And that's when I began to form my own principles of _Alignment_, which went on to form the starting point for the [Impulse App](https://impulse.training).
 
-So, what is this concept of Alignment? I like to picture it as a set of rails, like the ones that a train can run on.
+So, what is this concept of Alignment? I like to picture it as a set of rails, like the ones that a train can run on. I believe that it may be useful for others who identify with these "loop-hole" patterns.
 
-Firstly, I needed to recognise the things that were _not serving my goals and my happiness_, and then make a pledge to simply remove them from my life. I call this my list of _"Guidelines"_, and I think of it as the rail to the _left_.
+Firstly, I needed to recognise the things that were not serving my goals and my happiness, and then make a pledge to remove them from my life. I call this my list of _"Guidelines"_, and I think of it as the rail to the _left_.
 
-Secondly, I needed to be prepared for those _Impulse_ moments in which my old patterns of thinking are triggered, and my brain just _really wants_ to go down that old, familiar path. I needed a list of _"Tactics"_ for these moments, and I think of it as the rail to the _right_.
+Secondly, I needed to be prepared for those Impulse moments in which my old patterns of thinking are triggered, and my brain just really wants to go down that old, familiar path. I needed a list of _"Tactics"_ for these moments, and I think of it as the rail to the _right_.
 
-Finally, I needed to identify, out of all the possibilities that lie between these two "guiding" rails, what things are especially positive for me - things that can lift me up, boost my defences, and just generally _improve my life_? I call this third list my _"Boosters"_, and I think of it as the special "[power-rail](https://en.wikipedia.org/wiki/Third_rail)" running alongside the other two.
+Finally, I needed to identify: what things are especially beneficial for me? What things can lift me up, boost my defences, and just generally improve my life? I call this third list my _"Boosters"_, and I think of it as the special _"[power-rail](https://en.wikipedia.org/wiki/Third_rail)"_ running alongside the other two.
 
 So let's explore these three concepts in a bit more detail.
 
@@ -75,13 +72,13 @@ So let's explore these three concepts in a bit more detail.
 
 ![guidelines](/guidelines.png)
 
-When you identify a list of things that are unhelpful for you and your goals, and make a pledge to _completely avoid them_, you have yourself a set of _"Guidelines"_.
+If you identify "loop-hole" patterns in your life, then list both the actions and triggers that occur within those loops, then make a pledge to _completely avoid them_, you have yourself a set of _"Guidelines"_.
 
-The need for firm Guidlines is predicated on an idea: that often, there are some things in life are simply _not helpful_ for us, but they can stay in our lives anyway, despite our "better judgement". Then can wreak havoc or perhaps just slightly pull us down over time, but can also go unnoticed or unchallenged for many years. Even though we often think that _freedom_ is what we want, actually, it can be the right kinds of contraints - formulated out of self love and self-belief - that can be liberating in ways that _moderation_ cannot.
+The need for firm Guidlines is predicated on an idea: that often, there are some things in life are simply _not helpful_ for us, but they can stay in our lives anyway, despite our "better judgement". Then can wreak havoc or perhaps just "pull us down" over time, but can sometimes go unnoticed or unchallenged for many years. Even though we often think that _freedom_ is what we want, actually, it can be the right kinds of limitations - formulated out of self-love and self-belief - that can be liberating in ways that an all-accepting _moderation_ cannot.
 
-So, then, our first step for today is to identify what should go into this list of things to avoid. Exactly what goes in this list will vary from person to person, and I think some degree of "exploration" will always be necessary! But often, with some reflection, it's _easy_ to recognise these things in our lives.
+So, then, our first step is to identify what should go into our _Guidelines_ list of things to avoid. Exactly what goes in this list will vary from person to person, and I think some degree of "exploration" will always be necessary! But often, if you can relate to these "loop-holes", it's _easy_ to recognise the unhelpful actions or thoughts that occur, after some reflection.
 
-Then, after listing the "first" things that come to mind, it's also helpful to identify some of the other things that you do, the places that you go, or the thoughts that you think, that can act as "triggers" for these activities or thought patterns that you've identified. I encourage you to write those triggers down in the same list, too.
+After listing the "first" things that come to mind, it's also helpful to identify some of the other things that you do, the places that you go, or the thoughts that you think, that can act as "triggers" for these actions that you've identified. I encourage you to write those triggers down in the same list, too.
 
 For me, my _"Guidelines list"_ of things to avoid includes:
 
@@ -99,15 +96,15 @@ List as many as you like.
 
 ![tactics](/tactics.png)
 
-If you got through that exercise, congratulations! But sometimes, simply knowing what you "should" avoid is the easy part. Sometimes, the challenge is in actually sticking to our guidelines after we've defined them. That old familiar "Impulse" moment will come around again and again, when your brain's old "loop" is triggered, and it just _can't wait_ to dive into that old familiar action or thought pattern. Some people think about two versions of themselves: a "higher" self that has perspective and self-control, and a second version, that seems to act automatically some times, and keeps us feeling stuck in our loops.
+If you got through that exercise, congratulations! But sometimes, simply knowing what you "should" avoid is the easy part. Sometimes, the challenge is in actually sticking to our guidelines after we've defined them. That old familiar Impulse moment will come around again, when your brain just _can't wait_ to dive into that old familiar action. Some people think about two versions of themselves: a "higher" self that has perspective and self-control, and a second version, that seems to act automatically some times, and keeps us feeling stuck in our "loop-holes".
 
-If you can relate to any of this, the good news is: you're not alone! Something about these experiences is fundamentally _human_ in nature, and so the great thing is, we can all combine forces to share the _"Tactics"_ that we can deploy to break out of our loops in these critical moments, and get back to our "higher" or more "real" selves.
+If you can relate to any of this, the good news is: you're not alone! Something about these experiences is fundamentally _human_ in nature, and so the great thing is, we can all combine forces to share the _"Tactics"_ that we can deploy to break out of our loops in these critical moments, and get back to our "higher" or more "true" selves.
 
-Tactics include anything we can do to regain perspective, motivation, lightness, and ease in these moments. Sometimes, all it takes is a creative little challenge, reflection, or mind-exercise, to "break out" of the loop and get back on track. Sometimes it helps to be reminded of the consequences of different courses of action (and perhaps write those down!) It can help to identify triggers that might have affected you, or take a moment to "check-in" on your emotional state, and perhaps do something positive to take care of yourself if you're feeling low. You might like to try breathing exercises, math problems, or meditation!
+Sometimes, all it takes is a creative little challenge, reflection, or mind-exercise. Sometimes it helps to be reminded of the consequences of different courses of action (and perhaps write those down!) It can help to identify triggers that might have affected you in the moment (the act of identification can be a useful "tactic" itself), or take a moment to "check-in" on your emotional state, and perhaps do something positive to take care of yourself if you're feeling low. You might like to try breathing exercises, math problems, or meditation! Of course, it can be incredibly beneficial to explore structured programs and others' experiences of what can be most helpful in these critical moments.
 
 It's important to keep in mind, though, that tactics won't always work, especially as you're getting started. But that's ok. The important thing is that you get prepared, you start trying your tactics in action, and you constantly test and refine them as you go.
 
-For me, my _"Tactics list"_ of things to lean on in Impulse moments currently includes:
+For me, my _"Tactics list"_ of actions to deploy in Impulse moments currently includes:
 
 - _the ["4/7/8 breathing technique"](https://www.medicalnewstoday.com/articles/324417)_
 - _quickly drinking two glasses of water_, and
@@ -123,11 +120,11 @@ Try to list at least 3!
 
 ![booster](/booster.png)
 
-Now for the fun part: alongside the guiding rails is a third one, and it's the _"power-rail"_... you know, the one that's electrified with super high voltage?
+Now for the fun part: alongside the two guiding rails is a third one, and it's the _"power-rail"_... you know, the one that's electrified with super high voltage?
 
 This rail is made up of your _Boosters_ - all the little things that you can do during your day to boost your defences, power up your positivity, and also just _enjoy!_
 
-Within the whole range of choices, activities, and patterns of thinking that you can find within your guiding rails, everyone can find those activites that they truly _love_ doing... that are also genuinely positive and beneficial.
+Everyone can find activites that they truly _love_ doing, that are also genuinely positive and beneficial for them (and perhaps even for people around them!)
 
 For me, my _"Boosters List"_ includes:
 
@@ -145,14 +142,14 @@ Try to list at least 3, if you can.
 
 ![chess](/chess.png)
 
-Throughout history, many people have formed their own concepts of "Alignment". In sharing mine with you, I hope to keep the important conversation going!
+So, _is moderation really a lie?_ In truth, I believe moderation can be an important part of a healthy outlook on life for many people. But when it comes to breaking out of personal "loop-holes", you might benefit from some new perspectives, approaches, and tools, including the ones I've introduced today.
 
 I’ll leave you with a quote from Einstein on chess:
 
 **Chess grips its exponent, shackling the mind and brain so that the inner freedom and independence of even the strongest character cannot remain unaffected.**
 
+If you identify with mental "loop-holes", perhaps you'll now have three short lists that you can review each morning, to help you on your way. Or, you may have subscribed to be one of the first to use the [Impulse App](https://impulse.training)!
+
 What belongs in _your_ list of _Guidelines_ will be different to someone else's. Not all of my _Tactics_ will necessarily work for _you_. And _your_ best _Boosters_ will be the ones that are uniquely capable of energising and strengthening _you_.
 
-Maybe after reading this article you'll now have three short lists that you can review each morning. Or maybe, you will have subscribed to be one of the first to use the [Impulse App](https://impulse.training).
-
-In any case, it's my hope that by taking a while to define your own sets of Alignment rails: your “guidelines”, "tactics", and “boosters”, you might find yourself suddenly tracking a whole lot faster in the direction that you want to go... and enjoying the smoother, safer, supercharged ride.
+In any case, it is my hope that by defining these Alignment Rails, those struggling with some of these issues may find themselves tracking faster in the direction that they want to go... and enjoying the smoother, safer, supercharged ride.
