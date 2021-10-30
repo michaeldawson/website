@@ -7,7 +7,7 @@ startBar: 2
 icon: Url103_32x32_4
 ---
 
-_Heads up: This post is a cross between a brain dump, a diary entry, and a blog-post, and isn't yet intended for a truly public audience. Since writing the first version, a few of these ideas have evolved, in ways that I would be glad to talk more about with you. In the meantime, I hope you find it interesting, and I would welcome_ <a href="mailto:hi@michaeldawson.com.au">any feedback!</a>
+_Heads up: This post is a cross between a brain dump, a diary entry, and a blog-post, and isn't yet intended for a truly public audience. Since writing the first version, a few of these ideas have evolved, in ways that I would be glad to discuss with you. In the meantime, I hope you find it interesting, and I would welcome_ <a href="mailto:hi@michaeldawson.com.au">any feedback!</a>
 
 <pre>
 
@@ -20,21 +20,21 @@ The idea being, of course, that often, a particular thing is not harmful in and 
 
 As kids, we often tried to use this to our advantage, to make a case for a certain little treat or indulgence. Sometimes it worked its magic, and we'd succeed:
 
-_“Well I suppose…”_ She would begin... _“Everything in moderation!”_
+_“Well I suppose…”_ She would begin, as she softened. _“Everything in moderation!”_
 
-But then one day, having negotiated such triumphs as “ice-cream every second night”, I dreamed up the boldest way yet to put this principle to the test: What about... “pizza in moderation”, “fried chicken in moderation”, “burgers in moderation”, “french fries in moderation”, and (... the best one) _“chocolate-for-dinner”_ ... (_in-moderation_ !!) ???
+But then one day, having negotiated such triumphs as “ice-cream every second night”, I dreamed up the boldest way yet to put this principle to the test. What about... “pizza in moderation”, “fried chicken in moderation”, “burgers in moderation”, “french fries in moderation”, and (... the best one) _“chocolate-for-dinner”_ ... (_in-moderation_ !!) ???
 
 I could see it, within my grasp: one gloriously-delicious, yet still undeniably _moderation-based_ family food pyramid.
 
 Unsurprisingly, mum wasn’t prepared to sanction such a scientific experiment. But still I wasn’t given a satisfying answer as to why my proposition was _truly_ incompatible with her "Moderation maxim".
 
-As I grew older, I began to get less interested in junk food "loopholes", and more interested in other things, including the mental “loop-holes” that us humans can sometimes get stuck in. I mean the ones that sometimes look a little like this:
+As I grew older, I began to get less interested in junk food "loopholes", and more interested in other things, including the mental “loop-holes” that us humans can sometimes get stuck in. Ones that sometimes look a little like this:
 
 ![the-loop-hole](/the-loop-hole.png)
 
-Examples include chemical addictions (e.g. with alcohol, cigarettes or other substances), behavioural addictions (e.g. gambling, gaming, or internet addiction), but also - I would argue - other _unhelpful thought patterns_, such as ruminating on negative thoughts, anger-management issues, and other obsessions or compulsions. The degree to which these last examples are related to the "loop-holes" found in addictions is a topic that I am currently trying to understand better!
+Examples include chemical addictions (e.g. with alcohol, cigarettes or other substances), behavioural addictions (e.g. gambling, gaming, or internet addiction), but also - I would argue - other _unhelpful thought patterns_, such as rumination, anger-management issues, and other obsessions or compulsions. The degree to which these last examples are related to the "loop-holes" associated with addictions is a topic that I am currently trying to better understand!
 
-You'll notice a part of the loop that I call the "Impulse". The Impulse is that moment when your old brain pathways fire up in response to that _familiar trigger_, and your brain is just raring to dive into that _familiar action_ regardless of the consequences.
+You'll notice a part of the "loop-hole" that I call the "Impulse". The Impulse is that moment when your old brain pathways fire up in response to that _familiar trigger_, and your brain is just raring to dive into that _familiar action_ regardless of the consequences.
 
 You may identify some kinds of “loop-hole” patterns in yourself, or you may know others whose lives have been affected by them.
 
@@ -56,7 +56,7 @@ As I grew older, I tried leaning on the maxim of “moderation” in the hope th
 
 ![image](/rails.png)
 
-In the end, my real progress began when I realised that I needed more than what Mother Moderation could offer me. And that's when I began to form my own principles of _Alignment_, which went on to form the starting point for the [Impulse App](https://impulse.training).
+In the end, my real progress began when I realised that I needed more than what Mother Moderation could offer me. And that's when I began to form my own principles of _Alignment_, which went on to become the starting point for the [Impulse App](https://impulse.training).
 
 So, what is this concept of Alignment? I like to picture it as a set of rails, like the ones that a train can run on. I believe that it may be useful for others who identify with these "loop-hole" patterns.
 
@@ -144,7 +144,7 @@ Try to list at least 3, if you can.
 
 So, _is moderation really a lie?_ In truth, I believe moderation can be an important part of a healthy outlook on life for many people. But when it comes to breaking out of personal "loop-holes", you might benefit from some new perspectives, approaches, and tools, including the ones I've introduced today.
 
-I’ll leave you with a quote from Einstein on chess:
+I’ll leave you with a quote from Albert Einstein on chess:
 
 **Chess grips its exponent, shackling the mind and brain so that the inner freedom and independence of even the strongest character cannot remain unaffected.**
 

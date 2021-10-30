@@ -4,7 +4,7 @@ import { Freecell1 as FreecellIcon } from "@react95/icons/esm/react/Freecell1";
 import { RecycleFull } from "@react95/icons/esm/react/RecycleFull";
 import { WebOpen } from "@react95/icons/esm/react/WebOpen";
 import "@react95/icons/icons.css";
-import { map } from "lodash";
+import { map, sortBy } from "lodash";
 import React, { createElement, useEffect, useState } from "react";
 import { Helmet } from "react-helmet";
 import { v4 as uuidv4 } from "uuid";
@@ -71,7 +71,10 @@ export default function Main({
     (post) => post.node.frontmatter.desktopIcon
   );
 
-  const startBarPosts = posts.filter((post) => post.node.frontmatter.startBar);
+  const startBarPosts = sortBy(
+    posts.filter((post) => post.node.frontmatter.startBar),
+    (post) => post.node.frontmatter.startBar
+  );
 
   useEffect(() => {
     if (markdownRemark) openProgram("Post", { post: markdownRemark });
