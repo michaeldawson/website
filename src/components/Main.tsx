@@ -63,9 +63,10 @@ function Main({
     clippyElement.addEventListener("click", function () {
       if (clippySpeaking || clippyHidden) return;
 
+      setClippySpeaking(true);
+
       setTimeout(() => {
-        setClippySpeaking(true);
-        setTimeout(() => setClippySpeaking(false), 8000);
+        setTimeout(() => setClippySpeaking(false), 10000);
 
         if (CLIPPY_WISDOM.length === 0) {
           clippy.animate();
