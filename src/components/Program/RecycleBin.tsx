@@ -1,3 +1,4 @@
+import { useClippy } from "@react95/clippy";
 import { Progman17 } from "@react95/icons/esm/react/Progman17";
 import React from "react";
 import me from "../../images/me.jpeg";
@@ -6,7 +7,7 @@ import ExplorerProgram from "./Templates/Explorer";
 import runVirus from "./Virus";
 
 export default function RecycleBin({ openProgram, handleClose }: any) {
-  // const { clippy } = useClippy();
+  const { clippy } = useClippy();
 
   return (
     <ExplorerProgram title="Recycle Bin" handleClose={handleClose}>
@@ -14,7 +15,7 @@ export default function RecycleBin({ openProgram, handleClose }: any) {
         <img src={me} style={{ width: "32px", height: "32px" }} />
       </IconWrapper>
       <IconWrapper
-        handleDoubleClick={() => runVirus({ onFinished: () => {} })}
+        handleDoubleClick={() => runVirus({ clippy, onFinished: () => {} })}
         name="notavirus.exe"
       >
         <Progman17 />

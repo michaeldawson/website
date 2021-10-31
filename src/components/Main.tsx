@@ -1,4 +1,4 @@
-// import { ClippyProvider } from "@react95/clippy";
+import { ClippyProvider, useClippy } from "@react95/clippy";
 import { GlobalStyle, List, TaskBar, ThemeProvider } from "@react95/core";
 import { Freecell1 as FreecellIcon } from "@react95/icons/esm/react/Freecell1";
 import { RecycleFull } from "@react95/icons/esm/react/RecycleFull";
@@ -11,17 +11,18 @@ import { v4 as uuidv4 } from "uuid";
 import AirRobe from "../components/Icons/AirRobe";
 import Impulse from "../components/Icons/Impulse";
 import useWindowSize from "../utils/useWindowSize";
-// import clippy from "clippyjs";
-// import "../clippy/clippy";
 import IconWrapper from "./IconWrapper";
 import "./main.css";
 import * as Programs from "./Program";
 
 const CLIPPY_WISDOM = [
+  "When all else fails, bind some paper together! My name is Clippy.",
   "It looks like you're trying to view my website. Would you like help with that?",
-  "Hi there! Are you too young to remember clippy?",
-  "Perhaps it is the file that exists, and you who do not?",
+  "Perhaps it is the file that exists, but YOU who do not?",
 ];
+
+if (typeof window !== "undefined")
+  (window as any).CLIPPY_CDN = "/clippy/agents/";
 
 // Hacky hacky hack
 const desktopIcons = {
@@ -42,15 +43,50 @@ const history =
     ? null
     : require("history").createBrowserHistory();
 
-export default function Main({
+function Main({
   data: {
     allMarkdownRemark: { edges },
     markdownRemark,
   },
 }) {
   const size = useWindowSize();
-
+  const { clippy } = useClippy();
   const [openPrograms, setOpenPrograms] = useState<Array<OpenProgram>>([]);
+  const [clippyElement, setClippyElement] = useState<any>();
+
+  const [clippySpeaking, setClippySpeaking] = useState(false);
+  const [clippyHidden, setClippyHidden] = useState(false);
+
+  useEffect(() => {
+    if (!clippyElement) return;
+
+    clippyElement.addEventListener("click", function () {
+      if (clippySpeaking || clippyHidden) return;
+
+      setTimeout(() => {
+        setClippySpeaking(true);
+        setTimeout(() => setClippySpeaking(false), 8000);
+
+        if (CLIPPY_WISDOM.length === 0) {
+          clippy.animate();
+        } else {
+          clippy.speak(CLIPPY_WISDOM.shift());
+        }
+      }, 1000);
+    });
+
+    clippyElement.addEventListener("dblclick", () => {
+      setClippyHidden(true);
+      clippy.hide();
+    });
+  }, [clippyElement]);
+
+  useEffect(() => {
+    if (!clippy) return;
+
+    setClippyElement(clippy._balloon._targetEl[0]);
+    setTimeout(() => clippy.play("Wave"), 4000);
+  }, [clippy]);
 
   function setSlug(slug: string) {
     if (!slug) return;
@@ -99,17 +135,17 @@ export default function Main({
               <FreecellIcon />
             </IconWrapper>
           )}
-          {desktopPosts.map((post) => {
+          {desktopPosts.map((post, index) => {
             const Icon = desktopIcons[post.node.frontmatter.desktopIcon];
             return (
               <Icon
+                key={index}
                 handleDoubleClick={() =>
                   openProgram("Post", { post: post.node })
                 }
               />
             );
           })}
-
           <div style={{ flexGrow: 1 }} />
           <a
             href="https://www.linkedin.com/in/michael-dawson-36453224/"
@@ -169,3 +205,9 @@ export default function Main({
     </ThemeProvider>
   );
 }
+
+export default (props: any) => (
+  <ClippyProvider>
+    <Main {...props}></Main>
+  </ClippyProvider>
+);
