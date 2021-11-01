@@ -153,3 +153,10 @@ If you identify with mental "loop-holes", perhaps you'll now have three short li
 What belongs in _your_ list of _Guidelines_ will be different to someone else's. Not all of my _Tactics_ will necessarily work for _you_. And _your_ best _Boosters_ will be the ones that are uniquely capable of energising and strengthening _you_.
 
 In any case, it is my hope that by defining these Alignment Rails, those struggling with some of these issues may find themselves suddenly tracking a lot faster in the direction that they want to go... and enjoying the smoother, safer, supercharged ride.
+
+<pre>
+
+
+</pre>
+
+_p.s.: I believe that our experiences, challenges, and learnings will always be uniquely our own. Mum's "Moderation Maxim" provides a nice context for this story and exploration, but I want to add that I'm so grateful for all the lessons and the foundation of love that was the starting-point in our family: a love for each other, for ourselves, for God, and for learning! ❤️_
