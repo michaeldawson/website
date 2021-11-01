@@ -65,15 +65,13 @@ function Main({
 
       setClippySpeaking(true);
 
-      setTimeout(() => {
-        setTimeout(() => setClippySpeaking(false), 10000);
+      setTimeout(() => setClippySpeaking(false), 10000);
 
-        if (CLIPPY_WISDOM.length === 0) {
-          clippy.animate();
-        } else {
-          clippy.speak(CLIPPY_WISDOM.shift());
-        }
-      }, 1000);
+      if (CLIPPY_WISDOM.length === 0) {
+        clippy.animate();
+      } else {
+        clippy.speak(CLIPPY_WISDOM.shift());
+      }
     });
 
     clippyElement.addEventListener("dblclick", () => {
@@ -162,7 +160,7 @@ function Main({
             display: "flex",
             justifyContent: "flex-end",
             alignItems: "flex-end",
-            height: "95%",
+            height: "80%",
           }}
         >
           <IconWrapper
