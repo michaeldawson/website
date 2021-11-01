@@ -2,7 +2,7 @@
 slug: "about"
 date: "2021-10-24"
 title: "Nice to meet you"
-startBar: 1
+order: 1
 icon: Hand_32x32_4
 ---
 
@@ -10,7 +10,7 @@ Hi! I'm a software developer, currently lead engineer at [AirRobe.](http://airro
 
 I'm also working on a project to help people overcome addictions and unhelpful thought patterns, called [Impulse.](https://impulse.training)
 
-I work with web, mobile and hardware technologies. My specialties / current focus areas are:
+I work with web, mobile and hardware technologies, but also enjoy working with some video animation techniques. My specialties / current focus areas are:
 
 - React Native
 - Typescript / Javascript
@@ -20,7 +20,8 @@ I work with web, mobile and hardware technologies. My specialties / current focu
 - SQL / Databases
 - Serverless / Firebase
 - Elasticsearch
-- BLE (Bluetooth Low Energy) devices
+- Bluetooth devices
+- After Effects animations
 
 I'm also interested in the startup process, in particular, how to reduce the cost and time that it takes to learn on the way to building something great. I recommend [Lean Stack](https://leanstack.com/) for those interested in the science of successful startups.
 

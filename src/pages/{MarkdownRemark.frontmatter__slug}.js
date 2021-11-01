@@ -27,7 +27,7 @@ export const pageQuery = graphql`
             title
             desktopIcon
             subtitle
-            startBar
+            order
             icon
           }
         }

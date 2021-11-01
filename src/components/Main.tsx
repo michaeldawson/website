@@ -11,6 +11,7 @@ import { v4 as uuidv4 } from "uuid";
 import AirRobe from "../components/Icons/AirRobe";
 import Impulse from "../components/Icons/Impulse";
 import useWindowSize from "../utils/useWindowSize";
+import ActionPact from "./Icons/ActionPact";
 import IconWrapper from "./IconWrapper";
 import "./main.css";
 import * as Programs from "./Program";
@@ -28,6 +29,7 @@ if (typeof window !== "undefined")
 const desktopIcons = {
   AirRobe,
   Impulse,
+  ActionPact,
 };
 
 type ProgramName = keyof typeof Programs;
@@ -102,13 +104,14 @@ function Main({
     setOpenPrograms(openPrograms.filter(({ pid }) => processId !== pid));
 
   const posts = edges.filter((edge) => !!edge.node.frontmatter.date); // You can filter your posts based on some criteria
-  const desktopPosts = posts.filter(
-    (post) => post.node.frontmatter.desktopIcon
+  const desktopPosts = sortBy(
+    posts.filter((post) => post.node.frontmatter.desktopIcon),
+    (post) => post.node.frontmatter.order
   );
 
   const startBarPosts = sortBy(
-    posts.filter((post) => post.node.frontmatter.startBar),
-    (post) => post.node.frontmatter.startBar
+    posts.filter((post) => post.node.frontmatter.order),
+    (post) => post.node.frontmatter.order
   );
 
   useEffect(() => {

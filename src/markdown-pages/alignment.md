@@ -3,7 +3,7 @@ slug: "alignment"
 date: "2021-10-30"
 title: Moderation is a lie
 subtitle: ...It's "Alignment" that can set you free
-startBar: 2
+order: 4
 icon: Url103_32x32_4
 ---
 
