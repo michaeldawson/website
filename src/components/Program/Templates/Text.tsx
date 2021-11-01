@@ -13,7 +13,7 @@ export default function TextProgram({
 }) {
   const { width, height } = useWindowSize();
 
-  const modalWidth = isBig ? (width < 500 ? width : width * 0.9) : 500;
+  const modalWidth = width > 500 ? (isBig ? width * 0.9 : 500) : width;
   const modalHeight = (height * (isBig ? 85 : 60)) / 100;
 
   return (
