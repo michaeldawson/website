@@ -16,15 +16,15 @@ _Heads up: This post is a cross between a brain-dump, diary entry, and a blog-po
 
 While we were growing up, my Mother repeated a Maxim to us: “everything in Moderation!”
 
-The idea being, of course, that often, a particular thing is not harmful in and of itself, but it’s the excess, or the lack of “moderation” that can be the problem.
+The idea being, of course, that often, a particular thing is not harmful in and of itself, but it’s the excess, or the lack of “Moderation” that can be the problem.
 
 As kids, we often tried to use this to our advantage, to make a case for a certain little treat or indulgence. Sometimes it worked its magic:
 
-_“Well I suppose…”_ She would begin... _“Everything in moderation!”_
+_“Well I suppose…”_ She would begin... _“Everything in Moderation!”_
 
-But then one day, having negotiated such triumphs as “ice-cream every second night”, I dreamed up the boldest way yet to put this principle to the test. What about... “pizza in moderation”, “fried chicken in moderation”, “burgers in moderation”, “french fries in moderation”, and (... the best one) _“chocolate-for-dinner”_ ... (_in-moderation_ !!) ???
+But then one day, having negotiated such triumphs as “ice-cream every second night”, I dreamed up the boldest way yet to put this principle to the test. What about... “pizza in Moderation”, “fried chicken in Moderation”, “burgers in Moderation”, “french fries in Moderation”, and (... the best one) _“chocolate-for-dinner”_ ... (_in-Moderation_ !!) ???
 
-I could see it, within my grasp: one gloriously-delicious, yet still undeniably _moderation-based_ family food pyramid.
+I could see it, within my grasp: one gloriously-delicious, yet still undeniably _Moderation-based_ family food pyramid.
 
 Unsurprisingly, mum wasn’t prepared to sanction such a scientific experiment. But still I wasn’t given a satisfying answer as to why my proposition was _truly_ incompatible with her "Moderation Maxim".
 
@@ -38,7 +38,7 @@ You'll notice a part of the "loop-hole" that I call the "Impulse". The Impulse i
 
 You may identify some kinds of “loop-hole” patterns in yourself, or you may know others whose lives have been affected by them.
 
-When I observed them in myself, they would generally start innocently enough, but could develop into something more difficult to manage. For me, one interesting example was online speed-chess. I would start playing games to relax, and then before I knew it, my brain was reenforcing a process whereby as soon as one game finished, I _started playing the next game_.
+When I observed my own "loop-hole" patterns, they would generally start innocently enough, but could develop into something more difficult to manage. For me, one interesting example was online speed-chess. I would start playing games to relax, and then before I knew it, my brain was reenforcing a process whereby as soon as one game finished, I _started playing the next game_.
 
 Pop quiz: _what's the limit for how many games of speed chess a human can play in one session?_
 
@@ -50,19 +50,19 @@ As I grew older, I tried leaning on the Maxim of Mother-Moderation in the hope t
 
 - _“Your policy should be: just a few games, here and there...”_
 - _“Make sure you limit your playing to 1 hour today, so you have time for other important things. Given that you’ve exceeded that limit now, 3 hours should **definitely** be the limit!”_
-- _“And above all, never forget: Everything in moderation!”_
+- _“And above all, never forget: Everything in Moderation!”_
 
 ## Alignment
 
 ![image](/rails.png)
 
-In the end, my real progress began when I realised that I needed more than what Moderation could offer me. And that's when I began to form my own principles of _Alignment_, which went on to become the starting point for the [Impulse App](https://impulse.training). These concepts are intended for people who are struggling with "loop-hole" patterns of some kind, whether chemical, behavioural, or mental.
+In the end, my real progress began when I realised that I needed more than what Moderation could offer me. And that's when I began to form my own principles of _Alignment_, which went on to become the starting point for the [Impulse App](https://impulse.training). These concepts are intended for people who are struggling with "loop-hole" patterns of some kind, whether chemical, behavioural, or otherwise.
 
 So, what is this concept of Alignment? I like to picture it as a set of rails, like the ones that a train can run on.
 
 Firstly, I needed to recognise the things that were not serving my goals and my happiness, and then make a pledge to remove them from my life. I call this my list of _"Guidelines"_, and I think of it as the rail to the _left_.
 
-Secondly, I needed to be prepared for those Impulse moments in which those old patterns are triggered, and my brain just really wants to go down that familiar path. I needed a list of _"Tactics"_ for these moments, and I think of it as the rail to the _right_.
+Secondly, I needed to be prepared for those Impulse moments in which those old patterns are triggered, and my brain just really wants to jump into that familiar action. I needed a list of _"Tactics"_ for these moments, and I think of it as the rail to the _right_.
 
 Finally, I needed to identify: what things are especially beneficial for me? What things are the things that can lift me up, boost my defences, and that I will generally just enjoy doing? I call this third list my _"Boosters"_, and I think of it as the special _"[power-rail](https://en.wikipedia.org/wiki/Third_rail)"_ running alongside the other two.
 
@@ -74,7 +74,7 @@ So let's explore these three concepts in a bit more detail.
 
 When you list both the actions and triggers that occur within a personal "loop-hole" pattern, then make a pledge to _completely avoid those things_, you have yourself a set of _"Guidelines"_.
 
-The need for firm Guidlines is predicated on an idea: that often, there are some things in life are simply _not helpful_ for us, but they can stay in our lives anyway, despite our "better judgement". Then can wreak havoc or perhaps just "pull us down" over time, but can sometimes go unnoticed or unchallenged for many years. Even though we often think that _freedom_ is what we want, actually, it can be the right kinds of limitations - formulated out of self-love and self-belief - that can be liberating in ways that a policy of _moderation_ pcannot.
+The need for firm Guidlines is predicated on an idea: that often, there are some things in life are simply _not helpful_ for us, but they can stay in our lives anyway, despite our "better judgement". Then can wreak havoc or perhaps just "pull us down" over time, but can sometimes go unnoticed or unchallenged for many years. Even though we often think that _freedom_ is what we want, actually, it can be the right kinds of limitations - formulated out of self-love and self-belief - that can be liberating in ways that a policy of _Moderation_ pcannot.
 
 So, then, our first step is to identify what should go into our _Guidelines_ list - of things to avoid. Exactly what goes in this list will vary from person to person, and I think some degree of "exploration" will always be necessary! But often, if you can relate to these "loop-hole" patterns, it's _easy_ to recognise the unhelpful actions or thoughts that occur, after some reflection.
 
@@ -142,7 +142,7 @@ Try to list at least 3, if you can.
 
 ![chess](/chess.png)
 
-So, _is Moderation really a lie?_ In truth, I believe moderation can be an important part of a healthy outlook on life for many people. But when it comes to overcoming personal "loop-holes", you might benefit from some different perspectives, approaches, and tools, including the ones I've introduced today.
+So, _is Moderation really a lie?_ In truth, I believe Moderation can be an important part of a healthy outlook on life for many people. But when it comes to overcoming personal "loop-holes", you might benefit from some different perspectives, approaches, and tools, including the ones I've introduced today.
 
 I’ll leave you with a quote from Albert Einstein on chess:
 
