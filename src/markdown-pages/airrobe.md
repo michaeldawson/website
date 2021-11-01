@@ -8,14 +8,18 @@ icon: RecycleEmpty_32x32_4
 
 ![image](/clothes.png)
 
-We're Re-imagining Re-commerce!
+The fashion industry needs to change. Every year, countless tonnes of textiles are put to waste, while the cycle of consumption continues to gain momentum.
+
+We all know this - and consumers and suppliers everywhere are looking for ways to move into a more sustainable future.
+
+AirRobe provides that way forward.
 
 ([airrobe.com](https://airrobe.com))
 
-Our Circular Wardrobe plugin integrates directly with fashion retailers' ecommerce systems, providing a way for their customers to "add to airrobe" without leaving their site.
+Our Circular Wardrobe plugin integrates directly with fashion retailers' ecommerce systems, providing a way for customers to "add to airrobe" without leaving their site. Adding to AirRobe means that details of an item are available instantly - with original descriptions, high-quality photos and product attributes - to list the item for rent or resale later (with one click!).
 
 ![image](/airrobe-widget.png)
 
-After customers make a fashion purchase, their items are available instantly in their AirRobe account for them to rent, re-sell or recycle later.
+By integrating with AirRobe, fashion merchants can ensure that more of their items have a more sustainable future - as part of a circular economy. What's more, integrating with AirRobe can actually increase average order values, and unlock more sales opportunities for higher-value merchandise, as customers' thinking shifts from "can I afford this?" to "can I afford to buy this item, then rent or re-sell it later?".
 
-AirRobe provides a new solution to the question many retailers are asking right now: how can we a part of a more sustinable fashion future?
+AirRobe is the game-changer that the fashion industry has been waiting for, and it's been a pleasure to be a part of the journey!
