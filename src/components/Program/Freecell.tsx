@@ -10,7 +10,7 @@ export default function FreecellProgram({ handleClose }) {
       icon="freecell_1_32x32_4bit"
       title="Freecell"
       width={size.width}
-      height={Math.min((size.width / 4) * 3, (size.height / 7) * 6).toString()}
+      height={((size.height / 25) * 24).toString()}
       closeModal={handleClose}
       style={{
         padding: 0,
