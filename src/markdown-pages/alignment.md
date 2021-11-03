@@ -22,7 +22,7 @@ As kids, we often tried to use this to our advantage, to make a case for a certa
 
 _“Well I suppose…”_ She would begin... _“Everything in Moderation!”_
 
-But then one day, having negotiated such triumphs as “ice-cream every second night”, I dreamed up the boldest way yet to put this principle to the test. What about... “pizza in Moderation”, “fried chicken in Moderation”, “burgers in Moderation”, “french fries in Moderation”, and (... the best one) _“chocolate-for-dinner”_ ... (_in-Moderation_ !!) ???
+But then one day, having negotiated such triumphs as “ice-cream every second night”, I dreamed up the boldest way yet to put this principle to the test. What about... “pizza in Moderation”, “fried chicken in Moderation”, “burgers in Moderation”, “french fries in Moderation”, and (... the best one) _“chocolate-for-dinner”_ ... (_in-Moderation_ !!!) ???
 
 I could see it, within my grasp: one gloriously-delicious, yet still undeniably _Moderation-based_ family food pyramid.
 
@@ -56,15 +56,15 @@ As I grew older, I tried leaning on the Maxim of Mother-Moderation in the hope t
 
 ![image](/rails.png)
 
-In the end, my real progress began when I realised that I needed more than what Moderation could offer me. And that's when I began to form my own principles of _Alignment_, which went on to become the starting point for the [Impulse App](https://impulse.training). These concepts are intended for people who are struggling with "loop-hole" patterns of some kind, whether chemical, behavioural, or otherwise.
+In the end, my real progress began when I realised that I needed more than what Mother-Moderation could offer me. And that's when I began to form my own principles of _Alignment_, which went on to become the starting point for the [Impulse App](https://impulse.training). These concepts are intended for people who are struggling with "loop-hole" patterns of some kind, whether chemical, behavioural, or otherwise.
 
 So, what is this concept of Alignment? I like to picture it as a set of rails, like the ones that a train can run on.
 
 Firstly, I needed to recognise the things that were not serving my goals and my happiness, and then make a pledge to remove them from my life. I call this my list of _"Guidelines"_, and I think of it as the rail to the _left_.
 
-Secondly, I needed to be prepared for those Impulse moments in which those old patterns are triggered, and my brain just really wants to jump into that familiar action. I needed a list of _"Tactics"_ for these moments, and I think of it as the rail to the _right_.
+Secondly, I needed to be prepared for those Impulse moments in which those old familiar patterns are triggered, and my brain just really wants to jump into that old familiar action. I needed a list of _"Tactics"_ for these moments, and I think of it as the rail to the _right_.
 
-Finally, I needed to identify: what things are especially beneficial for me? What things are the things that can lift me up, boost my defences, and that I will generally just enjoy doing? I call this third list my _"Boosters"_, and I think of it as the special _"[power-rail](https://en.wikipedia.org/wiki/Third_rail)"_ running alongside the other two.
+Finally, I needed to identify: what things are especially beneficial for me? What are the things that can lift me up, boost my defences, and that I will generally just enjoy doing? I call this third list my _"Boosters"_, and I think of it as the special _"[power-rail](https://en.wikipedia.org/wiki/Third_rail)"_ running alongside the other two.
 
 So let's explore these three concepts in a bit more detail.
 
@@ -74,7 +74,7 @@ So let's explore these three concepts in a bit more detail.
 
 When you list both the actions and triggers that occur within a personal "loop-hole" pattern, then make a pledge to _completely avoid those things_, you have yourself a set of _"Guidelines"_.
 
-The need for firm Guidlines is predicated on an idea: that often, there are some things in life are simply _not helpful_ for us, but they can stay in our lives anyway, despite our "better judgement". Then can wreak havoc or perhaps just "pull us down" over time, but can sometimes go unnoticed or unchallenged for many years. Even though we often think that _freedom_ is what we want, actually, it can be the right kinds of limitations - formulated out of self-love and self-belief - that can be liberating in ways that a policy of _Moderation_ pcannot.
+The need for firm Guidlines is predicated on an idea: that often, there are some things in life are simply _not helpful_ for us, but they can stay in our lives anyway, despite our "better judgement". Then can wreak havoc or perhaps just "pull us down" over time, but can sometimes go unnoticed or unchallenged for many years. Even though we often think that _freedom_ is what we want, actually, it can be the right kinds of limitations - formulated out of self-love and self-belief - that can be liberating in ways that a policy of _Moderation_ cannot.
 
 So, then, our first step is to identify what should go into our _Guidelines_ list - of things to avoid. Exactly what goes in this list will vary from person to person, and I think some degree of "exploration" will always be necessary! But often, if you can relate to these "loop-hole" patterns, it's _easy_ to recognise the unhelpful actions or thoughts that occur, after some reflection.
 
@@ -86,9 +86,9 @@ For me, my _"Guidelines list"_ of things to avoid includes:
 - _googling random thoughts_, and
 - _mindless Youtube browsing_.
 
-Your turn, to ask yourself:
+If you also identify with these "loop-holes", then it's your turn, to ask yourself:
 
-**Are there behaviours or thought patterns in my life that are limiting my happiness? What about their "trigger" behaviours? Can I acknowledge right now that I don’t want those things in my life, and pledge to do my best to avoid them?**
+**What behaviours or thought patterns in my life are limiting my happiness and keeping me trapped in "loop-holes"? Can I acknowledge right now that I don’t want those things in my life, and pledge to do my best to avoid them? What about their "trigger" behaviours?**
 
 List as many as you like.
 
@@ -102,19 +102,21 @@ If you can relate to any of this, the good news is: you're not alone! Something 
 
 Sometimes, all it takes is a creative little challenge, reflection, or mind-exercise. Sometimes it helps to be reminded of the consequences of different courses of action (and perhaps write those down!) It can help to identify triggers that might have affected you in the moment (the act of identification can be a useful "tactic" itself), or take a moment to "check-in" on your emotional state, and perhaps do something positive to take care of yourself if you're feeling low. You might like to try breathing exercises, math problems, or meditation! Of course, it can be incredibly beneficial to explore structured programs and others' experiences of what can be most helpful in these critical moments. In the upcoming [Impulse App](https://impulse.training), you'll be able to explore combinations of tactics that others are using to overcome similar issues.
 
-It's important to keep in mind, though, that tactics won't always work, especially as you're getting started. But that's ok! The important thing is that you get prepared, you start trying deploy your tactics when you need them, and constantly test and refine your list as you go.
+It's important to keep in mind, though, that tactics won't always work, especially as you're getting started. But that's ok! The important thing is that you get prepared, you start trying out your tactics in your Impulse moments, and constantly test and refine your list as you go.
 
 For me, my _"Tactics list"_ of actions to deploy in Impulse moments currently includes:
 
 - _the ["4/7/8 breathing technique"](https://www.medicalnewstoday.com/articles/324417)_
-- _quickly drinking two glasses of water_, and
+- _drinking two glasses of water_, and
 - _going for a walk outside_.
 
 Your turn, to ask yourself:
 
-**What little tricks, distractions, reflections or exercises can I use during my future Impulse moments, to regain perspective, motivation, lightness and ease, and get back on track? Which will I reach for first, the next time I have an Impulse?**
+**\*What little tricks, distractions, reflections or exercises can I use during my Impulse moments, to regain perspective, motivation, lightness and ease, and get back on track? What structure programs can I explore, and how can I incorporate those techniques into my personal list of tactics? Which will I reach for first, the next time I have an Impulse Moment?**
 
 Try to list at least 3!
+
+- Note: if you have a serious or clinically-diagnosed mental health issue, these discussions may be interesting to you, but are not a substitute for professional help. Perhaps you might like to discuss these ideas with your therapist or mental-health professional!
 
 ## Boosters
 
@@ -124,7 +126,9 @@ Now for the fun part: alongside the two guiding rails is a third one, and it's t
 
 This rail is made up of your _Boosters_ - all the little things that you can do during your day to boost your defences, power up your positivity, and also just _enjoy!_
 
-Everyone can find activites that they truly _love_ doing, that are also genuinely positive and beneficial for them (and perhaps even for people around them!)
+Boosters are for any time of the day, but can also be a particular source of strength during your more difficult times, such as when you're feeling especially trapped in a "loop-hole" pattern.
+
+In any case, everyone can find activites that they truly _love_ doing, that are also genuinely positive and beneficial for them (and perhaps even for people around them!). The act of identifying what these things are can be a great reminder to start incorporating more of them into our lives.
 
 For me, my _"Boosters List"_ includes:
 
@@ -159,4 +163,4 @@ In any case, it is my hope that by defining these Alignment Rails, those struggl
 
 </pre>
 
-_p.s.: I believe that our experiences, challenges, and learnings will always be uniquely our own. Mum's "Moderation Maxim" provides a nice context for this story and exploration, but I want to add that I'm so grateful for all the lessons and the foundation of love that was the starting-point in our family: a love for each other, for ourselves, for God, and for learning! ❤️_
+_p.s.: I believe that our experiences, challenges, and learnings will always be uniquely our own. Mum's "Moderation Maxim" provides a nice context for this story and exploration, but I want to add that I'm so grateful for all the lessons, and the foundation of love that was the starting-point in our family: a love for each other, for ourselves, for God, and for learning! So... thanks, mum 😉❤️_
