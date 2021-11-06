@@ -28,17 +28,17 @@ I could see it, within my grasp: one gloriously-delicious, yet still undeniably 
 
 Unsurprisingly, mum wasn’t prepared to sanction such a scientific experiment. But still I wasn’t given a satisfying answer as to why my proposition was _truly_ incompatible with her "Moderation Maxim".
 
-As I grew older, I began to get less interested in junk food "loopholes", and more interested in other things, including the mental “loop-holes” that us humans can sometimes get stuck in. Ones that sometimes look a little like this:
+As I grew older, I began to get less interested in junk food “loopholes”, and more interested in other things, including the mental “Loop-Holes” that us humans can sometimes get stuck in. Ones that sometimes look a little like this:
 
-![the-loop-hole](/the-loop-hole.png)
+![the-loop-hole](/blog-images/loop-hole.png)
 
-Examples include chemical addictions (e.g. with alcohol, cigarettes or other substances), behavioural addictions (e.g. gambling, gaming, or internet addiction), but also - I would argue - other _unhelpful thought patterns_, such as rumination, anger-management issues, and other obsessions or compulsions. The degree to which these last examples are related to the "loop-holes" associated with addictions is a topic that I am currently trying to better understand!
+Examples include chemical addictions (e.g. with alcohol, cigarettes or other substances), behavioural addictions (e.g. gambling, gaming, or internet addiction), but also some other _unhelpful thought patterns_, such as rumination, anger-management issues, and other obsessions or compulsions. The degree to which these last examples are related to the "Loop-Holes" associated with addictions is a topic that I am currently trying to better understand.
 
-You'll notice a part of the "loop-hole" that I call the "Impulse". The Impulse is that moment when your old brain pathways fire up in response to that _familiar trigger_, and your brain is just raring to dive into that _familiar action_ regardless of the consequences.
+You'll notice a part of the "Loop-Hole" that I call the "Impulse". The Impulse is that moment when your old brain pathways fire up in response to that _familiar trigger_, and your brain is just raring to dive into that _familiar action_ regardless of the consequences.
 
-You may identify some kinds of “loop-hole” patterns in yourself, or you may know others whose lives have been affected by them.
+You may identify some kinds of “Loop-Hole” patterns in yourself, or you may know others whose lives have been affected by them.
 
-When I observed my own "loop-hole" patterns, they would generally start innocently enough, but could develop into something more difficult to manage. For me, one interesting example was online speed-chess. I would start playing games to relax, and then before I knew it, my brain was reenforcing a process whereby as soon as one game finished, I _started playing the next game_.
+When I observed my own "Loop-Hole" patterns, they would generally start innocently enough, but could develop into something more difficult to manage. For me, one interesting example was online speed-chess. I would start playing games to relax, and then before I knew it, my brain was reenforcing a process whereby as soon as one game finished, I _started playing the next game_.
 
 Pop quiz: _what's the limit for how many games of speed chess a human can play in one session?_
 
@@ -56,7 +56,7 @@ As I grew older, I tried leaning on the Maxim of Mother-Moderation in the hope t
 
 ![image](/rails.png)
 
-In the end, my real progress began when I realised that I needed more than what Mother-Moderation could offer me. And that's when I began to form my own principles of _Alignment_, which went on to become the starting point for the [Impulse App](https://impulse.training). These concepts are intended for people who are struggling with "loop-hole" patterns of some kind, whether chemical, behavioural, or otherwise.
+In the end, my real progress began when I realised that I needed more than what Mother-Moderation could offer me. And that's when I began to form my own principles of _Alignment_, which went on to become the starting point for the [Impulse App](https://impulse.training). These concepts are intended for people who are struggling with "Loop-Hole" patterns of some kind, whether chemical, behavioural, or otherwise.
 
 So, what is this concept of Alignment? I like to picture it as a set of rails, like the ones that a train can run on.
 
@@ -72,11 +72,11 @@ So let's explore these three concepts in a bit more detail.
 
 ![guidelines](/guidelines.png)
 
-When you list both the actions and triggers that occur within a personal "loop-hole" pattern, then make a pledge to _completely avoid those things_, you have yourself a set of _"Guidelines"_.
+When you list both the actions and triggers that occur within a personal "Loop-Hole" pattern, then make a pledge to _completely avoid those things_, you have yourself a set of _"Guidelines"_.
 
 The need for firm Guidlines is predicated on an idea: that often, there are some things in life are simply _not helpful_ for us, but they can stay in our lives anyway, despite our "better judgement". Then can wreak havoc or perhaps just "pull us down" over time, but can sometimes go unnoticed or unchallenged for many years. Even though we often think that _freedom_ is what we want, actually, it can be the right kinds of limitations - formulated out of self-love and self-belief - that can be liberating in ways that a policy of _Moderation_ cannot.
 
-So, then, our first step is to identify what should go into our _Guidelines_ list - of things to avoid. Exactly what goes in this list will vary from person to person, and I think some degree of "exploration" will always be necessary! But often, if you can relate to these "loop-hole" patterns, it's _easy_ to recognise the unhelpful actions or thoughts that occur, after some reflection.
+So, then, our first step is to identify what should go into our _Guidelines_ list - of things to avoid. Exactly what goes in this list will vary from person to person, and I think some degree of "exploration" will always be necessary! But often, if you can relate to these "Loop-Hole" patterns, it's _easy_ to recognise the unhelpful actions or thoughts that occur, after some reflection.
 
 After listing the "first" things that come to mind, it's also helpful to identify some of the other things that you do, the places that you go, or the thoughts that you think, that can act as "triggers" for these actions that you've identified. I encourage you to write those triggers down in the same list, too.
 
@@ -86,9 +86,9 @@ For me, my _"Guidelines list"_ of things to avoid includes:
 - _googling random thoughts_, and
 - _mindless Youtube browsing_.
 
-If you also identify with these "loop-holes", then it's your turn, to ask yourself:
+If you also identify with these "Loop-Holes", then it's your turn, to ask yourself:
 
-**What behaviours or thought patterns in my life are limiting my happiness and keeping me trapped in "loop-holes"? Can I acknowledge right now that I don’t want those things in my life, and pledge to do my best to avoid them? What about their "trigger" behaviours?**
+**What behaviours or thought patterns in my life are limiting my happiness and keeping me trapped in "Loop-Holes"? Can I acknowledge right now that I don’t want those things in my life, and pledge to do my best to avoid them? What about their "trigger" behaviours?**
 
 List as many as you like.
 
@@ -96,7 +96,7 @@ List as many as you like.
 
 ![tactics](/tactics.png)
 
-If you got through that exercise, congratulations! But sometimes, simply knowing what you "should" avoid is the easy part. Sometimes, the challenge is in actually sticking to our guidelines after we've defined them. That old familiar Impulse moment will come around again, when your brain just _can't wait_ to dive into that old familiar action. Some people think about two versions of themselves: a "higher" self that has perspective and self-control, and a second version, that seems to act automatically some times, and keeps us feeling stuck in our "loop-holes".
+If you got through that exercise, congratulations! But sometimes, simply knowing what you "should" avoid is the easy part. Sometimes, the challenge is in actually sticking to our guidelines after we've defined them. That old familiar Impulse moment will come around again, when your brain just _can't wait_ to dive into that old familiar action. Some people think about two versions of themselves: a "higher" self that has perspective and self-control, and a second version, that seems to act automatically some times, and keeps us feeling stuck in our "Loop-Holes".
 
 If you can relate to any of this, the good news is: you're not alone! Something about these experiences is fundamentally _human_ in nature, and so the great thing is, we can all combine forces to share the _"Tactics"_ that we can deploy to break out of our loops in these critical moments, and get back to our "higher" or more "true" selves.
 
@@ -126,7 +126,7 @@ Now for the fun part: alongside the two guiding rails is a third one, and it's t
 
 This rail is made up of your _Boosters_ - all the little things that you can do during your day to boost your defences, power up your positivity, and also just _enjoy!_
 
-Boosters are for any time of the day, but can also be a particular source of strength during your more difficult times, such as when you're feeling especially trapped in a "loop-hole" pattern.
+Boosters are for any time of the day, but can also be a particular source of strength during your more difficult times, such as when you're feeling especially trapped in a "Loop-Hole" pattern.
 
 In any case, everyone can find activites that they truly _love_ doing, that are also genuinely positive and beneficial for them (and perhaps even for people around them!). The act of identifying what these things are can be a great reminder to start incorporating more of them into our lives.
 
@@ -146,13 +146,13 @@ Try to list at least 3, if you can.
 
 ![chess](/chess.png)
 
-So, _is Moderation really a lie?_ In truth, I believe Moderation can be an important part of a healthy outlook on life for many people. But when it comes to overcoming personal "loop-holes", you might benefit from some different perspectives, approaches, and tools, including the ones I've introduced today.
+So, _is Moderation really a lie?_ In truth, I believe Moderation can be an important part of a healthy outlook on life for many people. But when it comes to overcoming personal "Loop-Holes", you might benefit from some different perspectives, approaches, and tools, including the ones I've introduced today.
 
 I’ll leave you with a quote from Albert Einstein on chess:
 
 **Chess grips its exponent, shackling the mind and brain so that the inner freedom and independence of even the strongest character cannot remain unaffected.**
 
-If you identify with mental "loop-holes", perhaps you'll now have three short lists that you can review each morning, to help you on your way. Or, you may have subscribed to be one of the first to use the [Impulse App](https://impulse.training)!
+If you identify with mental "Loop-Holes", perhaps you'll now have three short lists that you can review each morning, to help you on your way. Or, you may have subscribed to be one of the first to use the [Impulse App](https://impulse.training)!
 
 What belongs in _your_ list of _Guidelines_ will be different to someone else's. Not all of my _Tactics_ will necessarily work for _you_. And _your_ best _Boosters_ will be the ones that are uniquely capable of energising and strengthening _you_.
 

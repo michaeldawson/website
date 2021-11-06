@@ -29,11 +29,6 @@ img[src="/impulse.png"] {
   margin: 0 20%;
 }
 
-img[src="/the-loop-hole.png"] {
-  width: 55%;
-  margin: 40px 22.5%;
-}
-
 img[src="/rails.png"] {
   width: 40%;
   margin: 0 30%;
@@ -68,10 +63,20 @@ img[src="/airrobe-widget.png"] {
   max-width: 500px;
 }
 
+img[src="/blog-images/loop-hole.png"] {
+  width: 50%;
+  margin: 0 25%;
+}
+
 @media (max-width: 768px) {
   img[src="/the-loop-hole.png"] {
+    width: 33%;
+    margin: 20px;
+  }
+
+  img[src="/blog-images/loop-hole.png"] {
     width: 100%;
-    margin: 20px 0;
+    margin: 20px auto;
   }
 
   img[src="/airrobe-widget.png"] {
