@@ -68,6 +68,21 @@ img[src="/blog-images/loop-hole.png"] {
   margin: 0 25%;
 }
 
+img[src="/blog-images/me.jpeg"] {
+  width: 33%;
+  margin: 0 33%;
+}
+
+img[src="/blog-images/sharehouse.png"] {
+  width: 33%;
+  margin: 0 33%;
+}
+
+img[src="/blog-images/about.png"] {
+  width: 33%;
+  margin: 0 33%;
+}
+
 @media (max-width: 768px) {
   img[src="/the-loop-hole.png"] {
     width: 33%;
@@ -96,6 +111,16 @@ img[src="/blog-images/loop-hole.png"] {
   img[src="/chess.png"] {
     width: 60%;
     margin: 20px 20%;
+  }
+
+  img[src="/blog-images/sharehouse.png"] {
+    width: 80%;
+    margin: 0 10%;
+  }
+
+  img[src="/blog-images/about.png"] {
+    width: 80%;
+    margin: 0 10%;
   }
 
   p,
