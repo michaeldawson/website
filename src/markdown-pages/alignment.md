@@ -163,4 +163,4 @@ In any case, it is my hope that by defining these Alignment Rails, those struggl
 
 </pre>
 
-_p.s.: I believe that our experiences, challenges, and learnings will always be uniquely our own. Mum's "Moderation Maxim" provides a nice context for this story and exploration, but I want to add that I'm so grateful for all the lessons, and the foundation of love that was the starting-point in our family: a love for each other, for ourselves, for God, and for learning! So... thanks, mum 😉❤️_
+_p.s.: I believe that our experiences, challenges, and learnings will always be uniquely our own. Mum's "Moderation Maxim" provides a nice context for this story and exploration, but I want to add that I'm so grateful for all the lessons, and the foundation of love that was the starting-point in our family. So... thanks, mum 😉❤️_
