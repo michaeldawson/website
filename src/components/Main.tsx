@@ -105,7 +105,6 @@ function Main({
 
   const openProgram = (name: ProgramName, props?: any) => {
     const slug = props?.mdx?.frontmatter?.slug;
-    if (!slug) return;
     setSlug(props?.mdx?.frontmatter?.slug);
 
     setOpenPrograms([...openPrograms, { pid: uuidv4(), name, props }]);
