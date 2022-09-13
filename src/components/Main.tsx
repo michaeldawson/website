@@ -4,6 +4,7 @@ import { Freecell1 as FreecellIcon } from "@react95/icons/esm/react/Freecell1";
 import { RecycleFull } from "@react95/icons/esm/react/RecycleFull";
 import { WebOpen } from "@react95/icons/esm/react/WebOpen";
 import "@react95/icons/icons.css";
+import { navigate } from "gatsby";
 import { map, sortBy } from "lodash";
 import React, { createElement, useEffect, useState } from "react";
 import { Helmet } from "react-helmet";
@@ -47,9 +48,10 @@ const history =
 
 function Main({
   data: {
-    allMarkdownRemark: { edges },
-    markdownRemark,
+    allMdx: { edges },
+    mdx,
   },
+  children,
 }) {
   const size = useWindowSize();
   const { clippy } = useClippy();
@@ -58,6 +60,12 @@ function Main({
 
   const [clippySpeaking, setClippySpeaking] = useState(false);
   const [clippyHidden, setClippyHidden] = useState(false);
+
+  function navigate(slug) {
+    return function () {
+      window.location.href = slug;
+    };
+  }
 
   useEffect(() => {
     if (!clippyElement) return;
@@ -86,7 +94,8 @@ function Main({
     if (!clippy) return;
 
     setClippyElement(clippy._balloon._targetEl[0]);
-    setTimeout(() => clippy.play("Wave"), 4000);
+
+    // setTimeout(() => clippy.play("Wave"), 4000);
   }, [clippy]);
 
   function setSlug(slug: string) {
@@ -94,8 +103,10 @@ function Main({
     history?.push("/" + slug);
   }
 
-  const openProgram = (name: ProgramName, props = undefined) => {
-    setSlug(props?.post?.frontmatter?.slug);
+  const openProgram = (name: ProgramName, props?: any) => {
+    const slug = props?.mdx?.frontmatter?.slug;
+    if (!slug) return;
+    setSlug(props?.mdx?.frontmatter?.slug);
 
     setOpenPrograms([...openPrograms, { pid: uuidv4(), name, props }]);
   };
@@ -115,10 +126,12 @@ function Main({
   );
 
   useEffect(() => {
-    if (markdownRemark) openProgram("Post", { post: markdownRemark });
-  }, [markdownRemark]);
+    if (children) {
+      openProgram("Post", { mdx, children });
+    }
+  }, [mdx]);
 
-  const postTitle = markdownRemark?.frontmatter?.title;
+  const postTitle = mdx?.frontmatter?.title;
   const title = postTitle ? `${postTitle} | Michael Dawson` : "Michael Dawson";
 
   return (
@@ -142,9 +155,7 @@ function Main({
             return (
               <Icon
                 key={index}
-                handleDoubleClick={() =>
-                  openProgram("Post", { post: post.node })
-                }
+                handleDoubleClick={navigate(post.node.frontmatter.slug)}
               />
             );
           })}
@@ -194,9 +205,7 @@ function Main({
               <List.Item
                 key={node.frontmatter.slug}
                 icon={node.frontmatter.icon}
-                onClick={() => {
-                  openProgram("Post", { post: node });
-                }}
+                onClick={navigate(node.frontmatter.slug)}
               >
                 {node.frontmatter.title}
               </List.Item>

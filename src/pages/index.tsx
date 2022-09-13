@@ -5,12 +5,19 @@ export default Main;
 
 export const pageQuery = graphql`
   query {
-    allMarkdownRemark(sort: { order: DESC, fields: [frontmatter___date] }) {
+    mdx {
+      body
+      frontmatter {
+        title
+        subtitle
+      }
+    }
+    allMdx(sort: { order: DESC, fields: [frontmatter___date] }) {
       edges {
         node {
           id
           excerpt(pruneLength: 250)
-          html
+          body
           frontmatter {
             date(formatString: "MMMM DD, YYYY")
             slug
