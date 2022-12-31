@@ -2,7 +2,7 @@ import React from "react";
 import TextProgram from "./Templates/Text";
 
 export default function Post({ mdx, children, handleClose, handleClick }) {
-  const isBig = mdx.body.length > 200;
+  const isBig = true || mdx.body.length > 200;
 
   return (
     <TextProgram
