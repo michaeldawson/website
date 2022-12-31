@@ -24,6 +24,7 @@ export const pageQuery = graphql`
             title
             subtitle
             desktopIcon
+            link
             order
             icon
           }

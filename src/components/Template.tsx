@@ -26,6 +26,7 @@ export const query = graphql`
             slug
             date
             desktopIcon
+            link
             order
             icon
           }

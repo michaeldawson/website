@@ -119,6 +119,8 @@ function Main({
     (post) => post.node.frontmatter.order
   );
 
+  console.log({ desktopPosts });
+
   const startBarPosts = sortBy(
     posts.filter((post) => post.node.frontmatter.order),
     (post) => post.node.frontmatter.order
@@ -154,7 +156,9 @@ function Main({
             return (
               <Icon
                 key={index}
-                handleDoubleClick={navigate(post.node.frontmatter.slug)}
+                handleDoubleClick={navigate(
+                  post.node.frontmatter.link || post.node.frontmatter.slug
+                )}
               />
             );
           })}
@@ -204,7 +208,9 @@ function Main({
               <List.Item
                 key={node.frontmatter.slug}
                 icon={node.frontmatter.icon}
-                onClick={navigate(node.frontmatter.slug)}
+                onClick={navigate(
+                  node.frontmatter.link || node.frontmatter.slug
+                )}
               >
                 {node.frontmatter.title}
               </List.Item>
