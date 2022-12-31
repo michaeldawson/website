@@ -20,6 +20,7 @@
     "@react95/core": "^3.0.7",
     "@react95/icons": "^2.0.4",
     "@types/history": "^4.7.9",
+    "@u-wave/react-vimeo": "^0.9.10",
     "@use-it/interval": "^1.0.0",
     "babel-plugin-styled-components": "^1.12.0",
     "gatsby": "^4.0.0",
