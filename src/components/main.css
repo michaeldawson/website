@@ -8,11 +8,24 @@ h4 {
 h2 {
   margin-top: 40px;
   margin-bottom: 30px;
+  font-size: 22px;
 }
 
 .post-date {
   margin-bottom: 40px;
   color: #666;
+}
+
+blockquote {
+  margin-top: 25px;
+  font-style: italic;
+}
+
+blockquote:before {
+  content: '"';
+  font-size: 33px;
+  position: relative;
+  left: -30px;
 }
 
 p,
@@ -105,6 +118,10 @@ img[src="/blog-images/s2.png"] {
   img[src="/rails.png"] {
     width: 100%;
     margin: 20px 0;
+  }
+
+  img[src="/blog-images/tshirts.png"] {
+    width: 100%;
   }
 
   img[src="/booster.png"] {

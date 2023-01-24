@@ -4,7 +4,6 @@ import { Freecell1 as FreecellIcon } from "@react95/icons/esm/react/Freecell1";
 import { RecycleFull } from "@react95/icons/esm/react/RecycleFull";
 import { WebOpen } from "@react95/icons/esm/react/WebOpen";
 import "@react95/icons/icons.css";
-import { navigate } from "gatsby";
 import { map, sortBy } from "lodash";
 import React, { createElement, useEffect, useState } from "react";
 import { Helmet } from "react-helmet";
@@ -212,7 +211,7 @@ function Main({
                   node.frontmatter.link || node.frontmatter.slug
                 )}
               >
-                {node.frontmatter.title}
+                {node.frontmatter.slug}
               </List.Item>
             ))}
           </List>
