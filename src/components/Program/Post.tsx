@@ -14,7 +14,7 @@ export default function Post({ mdx, children, handleClose, handleClick }) {
       <h1>{mdx.frontmatter.title}</h1>
       <h2>{mdx.frontmatter.subtitle}</h2>
       {mdx.frontmatter.date ? (
-        <div className="post-date">Last updated {mdx.frontmatter.date}</div>
+        <div className="post-date">Posted {mdx.frontmatter.date}</div>
       ) : null}
       <div style={{ marginBottom: 30 }}>{children}</div>
     </TextProgram>
