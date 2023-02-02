@@ -3046,7 +3046,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@react95/core@npm:^3.0.7":
+"@react95/core@npm:3.0.7":
   version: 3.0.7
   resolution: "@react95/core@npm:3.0.7"
   dependencies:
@@ -3071,6 +3071,34 @@ __metadata:
     react-dom: ^16.13.1
     styled-components: ^5.1.0
   checksum: a976a072c01bf4227e0a23c1443918f8469c6bcc5fe67d1af8b17d2a571c07c05a4f6748232ff1dbad7f3b73c225b8fc118fb00a7b17bb042247b65dd429c7c7
+  languageName: node
+  linkType: hard
+
+"@react95/core@patch:@react95/core@npm%3A3.0.7#./.yarn/patches/@react95-core-npm-3.0.7-2c0e90cd53.patch::locator=michaeldawson%40workspace%3A.":
+  version: 3.0.7
+  resolution: "@react95/core@patch:@react95/core@npm%3A3.0.7#./.yarn/patches/@react95-core-npm-3.0.7-2c0e90cd53.patch::version=3.0.7&hash=f11742&locator=michaeldawson%40workspace%3A."
+  dependencies:
+    "@react95/clippy": ^1.0.3
+    "@react95/icons": ^1.0.3
+    "@styled-system/prop-types": ^5.1.5
+    "@testing-library/react-hooks": ^3.2.1
+    "@types/react-virtualized": ^9.21.10
+    "@xstyled/styled-components": ^1.17.1
+    csstype: ^3.0.3
+    icojs: ^0.14.0
+    isomorphic-fetch: ^2.2.1
+    prop-types: ^15.7.2
+    react-docgen-typescript-loader: ^3.7.2
+    react-draggable: ^4.3.1
+    react-virtualized: ^9.21.2
+    styled-system: ^5.1.5
+    ts-loader: ^8.0.2
+    typescript: ^3.9.7
+  peerDependencies:
+    react: ^16.13.1
+    react-dom: ^16.13.1
+    styled-components: ^5.1.0
+  checksum: 91927e3a83ae03887b8862ae9fe2caefe554c813fa8c7d655377905dda255af8ac2c4e735d01ddec99f9bcf05f699fa5463c55708230044215cabd11b1c154ec
   languageName: node
   linkType: hard
 
@@ -6332,9 +6360,9 @@ __metadata:
   linkType: hard
 
 "decode-uri-component@npm:^0.2.0":
-  version: 0.2.0
-  resolution: "decode-uri-component@npm:0.2.0"
-  checksum: f3749344ab9305ffcfe4bfe300e2dbb61fc6359e2b736812100a3b1b6db0a5668cba31a05e4b45d4d63dbf1a18dfa354cd3ca5bb3ededddabb8cd293f4404f94
+  version: 0.2.2
+  resolution: "decode-uri-component@npm:0.2.2"
+  checksum: 95476a7d28f267292ce745eac3524a9079058bbb35767b76e3ee87d42e34cd0275d2eb19d9d08c3e167f97556e8a2872747f5e65cbebcac8b0c98d83e285f139
   languageName: node
   linkType: hard
 
@@ -15817,7 +15845,7 @@ __metadata:
 
 "typescript@patch:typescript@^3.9.7#~builtin<compat/typescript>":
   version: 3.9.10
-  resolution: "typescript@patch:typescript@npm%3A3.9.10#~builtin<compat/typescript>::version=3.9.10&hash=701156"
+  resolution: "typescript@patch:typescript@npm%3A3.9.10#~builtin<compat/typescript>::version=3.9.10&hash=a1c5e5"
   bin:
     tsc: bin/tsc
     tsserver: bin/tsserver
