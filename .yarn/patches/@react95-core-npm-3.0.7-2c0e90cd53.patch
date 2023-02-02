@@ -1,0 +1,65 @@
+diff --git a/cjs/TaskBar/WindowButton.js b/cjs/TaskBar/WindowButton.js
+index a6013285a011cbaa3e08b4a19ee7271a6c44ca4c..7c73f68648da4af82dc92fb368f19767d132719d 100644
+--- a/cjs/TaskBar/WindowButton.js
++++ b/cjs/TaskBar/WindowButton.js
+@@ -79,15 +79,19 @@ var WindowButton = function WindowButton(_ref3) {
+     boxShadow: 'out'
+   }, props, {
+     as: "button"
+-  }), /*#__PURE__*/_react["default"].createElement(_Icon["default"], {
+-    name: icon,
+-    style: {
+-      marginRight: 4,
+-      minWidth: 20,
+-      width: 20,
+-      height: 20
+-    }
+-  }), children);
++  }), /*#__PURE__*/
++  React.createElement('img', { src: "https://michaeldawson.com.au/favicon.ico", style: {height: 18, marginRight: 3} })
++  // _react["default"].createElement(_Icon["default"], {
++  //   name: icon,
++  //   style: {
++  //     marginRight: 4,
++  //     minWidth: 20,
++  //     width: 20,
++  //     height: 20
++  //   }
++  // })
++  
++  , children);
+ };
+ 
+ WindowButton.defaultProps = {
+diff --git a/esm/TaskBar/WindowButton.js b/esm/TaskBar/WindowButton.js
+index bf4874fc1eea1f9c69d4d9a99aa45113cf101151..b5693b31326a05aaf3779dc175e503072cdaf573 100644
+--- a/esm/TaskBar/WindowButton.js
++++ b/esm/TaskBar/WindowButton.js
+@@ -59,15 +59,18 @@ var WindowButton = function WindowButton(_ref3) {
+     boxShadow: 'out'
+   }, props, {
+     as: "button"
+-  }), /*#__PURE__*/React.createElement(Icon, {
+-    name: icon,
+-    style: {
+-      marginRight: 4,
+-      minWidth: 20,
+-      width: 20,
+-      height: 20
+-    }
+-  }), children);
++  }), /*#__PURE__*/
++  React.createElement('img', { src: "https://michaeldawson.com.au/favicon.ico", style: {height: 18, marginRight: 3} }
++  // React.createElement(Icon, {
++  //   name: icon,
++  //   style: {
++  //     marginRight: 4,
++  //     minWidth: 20,
++  //     width: 20,
++  //     height: 20
++  //   }
++  // })
++  , children);
+ };
+ 
+ WindowButton.defaultProps = {
