@@ -43,5 +43,8 @@
     "react-helmet": "^6.1.0",
     "styled-components": "^5.2.3",
     "uuid": "^8.3.2"
+  },
+  "resolutions": {
+    "@react95/core@^3.0.7": "patch:@react95/core@npm%3A3.0.7#./.yarn/patches/@react95-core-npm-3.0.7-2c0e90cd53.patch"
   }
 }
