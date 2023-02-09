@@ -3046,7 +3046,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@react95/core@npm:^3.0.7":
+"@react95/core@npm:3.0.7":
   version: 3.0.7
   resolution: "@react95/core@npm:3.0.7"
   dependencies:
@@ -3074,6 +3074,34 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@react95/core@patch:@react95/core@npm%3A3.0.7#./.yarn/patches/@react95-core-npm-3.0.7-2c0e90cd53.patch::locator=michaeldawson%40workspace%3A.":
+  version: 3.0.7
+  resolution: "@react95/core@patch:@react95/core@npm%3A3.0.7#./.yarn/patches/@react95-core-npm-3.0.7-2c0e90cd53.patch::version=3.0.7&hash=e8958f&locator=michaeldawson%40workspace%3A."
+  dependencies:
+    "@react95/clippy": ^1.0.3
+    "@react95/icons": ^1.0.3
+    "@styled-system/prop-types": ^5.1.5
+    "@testing-library/react-hooks": ^3.2.1
+    "@types/react-virtualized": ^9.21.10
+    "@xstyled/styled-components": ^1.17.1
+    csstype: ^3.0.3
+    icojs: ^0.14.0
+    isomorphic-fetch: ^2.2.1
+    prop-types: ^15.7.2
+    react-docgen-typescript-loader: ^3.7.2
+    react-draggable: ^4.3.1
+    react-virtualized: ^9.21.2
+    styled-system: ^5.1.5
+    ts-loader: ^8.0.2
+    typescript: ^3.9.7
+  peerDependencies:
+    react: ^16.13.1
+    react-dom: ^16.13.1
+    styled-components: ^5.1.0
+  checksum: 4bbe1496d3b2d85d96937193c5dc9137acb74f93f62b792add8809fdadca6ec6786c63c3ba9d1c37fbf5365759a145af0a7b20d8d3f92c2792f5b9465927ae0a
+  languageName: node
+  linkType: hard
+
 "@react95/icons@npm:^1.0.3":
   version: 1.0.3
   resolution: "@react95/icons@npm:1.0.3"
@@ -3098,9 +3126,9 @@ __metadata:
   linkType: hard
 
 "@sideway/formula@npm:^3.0.0":
-  version: 3.0.0
-  resolution: "@sideway/formula@npm:3.0.0"
-  checksum: 8ae26a0ed6bc84f7310be6aae6eb9d81e97f382619fc69025d346871a707eaab0fa38b8c857e3f0c35a19923de129f42d35c50b8010c928d64aab41578580ec4
+  version: 3.0.1
+  resolution: "@sideway/formula@npm:3.0.1"
+  checksum: e4beeebc9dbe2ff4ef0def15cec0165e00d1612e3d7cea0bc9ce5175c3263fc2c818b679bd558957f49400ee7be9d4e5ac90487e1625b4932e15c4aa7919c57a
   languageName: node
   linkType: hard
 
@@ -15817,7 +15845,7 @@ __metadata:
 
 "typescript@patch:typescript@^3.9.7#~builtin<compat/typescript>":
   version: 3.9.10
-  resolution: "typescript@patch:typescript@npm%3A3.9.10#~builtin<compat/typescript>::version=3.9.10&hash=701156"
+  resolution: "typescript@patch:typescript@npm%3A3.9.10#~builtin<compat/typescript>::version=3.9.10&hash=a1c5e5"
   bin:
     tsc: bin/tsc
     tsserver: bin/tsserver
