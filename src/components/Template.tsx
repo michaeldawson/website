@@ -1,11 +1,12 @@
-import React from "react";
-import { graphql } from "gatsby";
 import { MDXProvider } from "@mdx-js/react";
-import Slider from "./Slider";
-import MyCountup from "./MyCountup";
+import { graphql } from "gatsby";
+import React from "react";
 import Main from "./Main";
+import MyCountup from "./MyCountup";
+import RecommendationButton from "./RecommendationButton";
+import Slider from "./Slider";
 
-const shortcodes = { Slider, MyCountup }; // Provide common components here
+const shortcodes = { Slider, MyCountup, RecommendationButton }; // Provide common components here
 
 export default function PageTemplate({ data, children }) {
   return (
