@@ -4,9 +4,10 @@ import React from "react";
 import Main from "./Main";
 import MyCountup from "./MyCountup";
 import RecommendationButton from "./RecommendationButton";
+import Redirect from "./Redirect";
 import Slider from "./Slider";
 
-const shortcodes = { Slider, MyCountup, RecommendationButton }; // Provide common components here
+const shortcodes = { Slider, MyCountup, RecommendationButton, Redirect }; // Provide common components here
 
 export default function PageTemplate({ data, children }) {
   return (
