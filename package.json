@@ -16,6 +16,7 @@
   },
   "dependencies": {
     "@mdx-js/react": "^2.1.3",
+    "@one-pixel-ahead/gatsby-plugin-well-known-pages": "^1.0.3",
     "@react95/clippy": "^1.0.5",
     "@react95/core": "^3.0.7",
     "@react95/icons": "^2.0.4",

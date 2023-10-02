@@ -2569,6 +2569,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@one-pixel-ahead/gatsby-plugin-well-known-pages@npm:^1.0.3":
+  version: 1.0.3
+  resolution: "@one-pixel-ahead/gatsby-plugin-well-known-pages@npm:1.0.3"
+  checksum: beb4c63377d225602c65a2d524f76e1f66df969f605121127ebb62a1c5213c27681eae6788bf0357155116ae966f7353b81a187690319b2cfd7fc0a449b3bb6c
+  languageName: node
+  linkType: hard
+
 "@parcel/bundler-default@npm:2.6.2":
   version: 2.6.2
   resolution: "@parcel/bundler-default@npm:2.6.2"
@@ -3046,7 +3053,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@react95/core@npm:^3.0.7":
+"@react95/core@npm:3.0.7":
   version: 3.0.7
   resolution: "@react95/core@npm:3.0.7"
   dependencies:
@@ -3071,6 +3078,34 @@ __metadata:
     react-dom: ^16.13.1
     styled-components: ^5.1.0
   checksum: a976a072c01bf4227e0a23c1443918f8469c6bcc5fe67d1af8b17d2a571c07c05a4f6748232ff1dbad7f3b73c225b8fc118fb00a7b17bb042247b65dd429c7c7
+  languageName: node
+  linkType: hard
+
+"@react95/core@patch:@react95/core@npm%3A3.0.7#./.yarn/patches/@react95-core-npm-3.0.7-2c0e90cd53.patch::locator=michaeldawson%40workspace%3A.":
+  version: 3.0.7
+  resolution: "@react95/core@patch:@react95/core@npm%3A3.0.7#./.yarn/patches/@react95-core-npm-3.0.7-2c0e90cd53.patch::version=3.0.7&hash=e8958f&locator=michaeldawson%40workspace%3A."
+  dependencies:
+    "@react95/clippy": ^1.0.3
+    "@react95/icons": ^1.0.3
+    "@styled-system/prop-types": ^5.1.5
+    "@testing-library/react-hooks": ^3.2.1
+    "@types/react-virtualized": ^9.21.10
+    "@xstyled/styled-components": ^1.17.1
+    csstype: ^3.0.3
+    icojs: ^0.14.0
+    isomorphic-fetch: ^2.2.1
+    prop-types: ^15.7.2
+    react-docgen-typescript-loader: ^3.7.2
+    react-draggable: ^4.3.1
+    react-virtualized: ^9.21.2
+    styled-system: ^5.1.5
+    ts-loader: ^8.0.2
+    typescript: ^3.9.7
+  peerDependencies:
+    react: ^16.13.1
+    react-dom: ^16.13.1
+    styled-components: ^5.1.0
+  checksum: 4bbe1496d3b2d85d96937193c5dc9137acb74f93f62b792add8809fdadca6ec6786c63c3ba9d1c37fbf5365759a145af0a7b20d8d3f92c2792f5b9465927ae0a
   languageName: node
   linkType: hard
 
@@ -11295,6 +11330,7 @@ __metadata:
   resolution: "michaeldawson@workspace:."
   dependencies:
     "@mdx-js/react": ^2.1.3
+    "@one-pixel-ahead/gatsby-plugin-well-known-pages": ^1.0.3
     "@react95/clippy": ^1.0.5
     "@react95/core": ^3.0.7
     "@react95/icons": ^2.0.4
