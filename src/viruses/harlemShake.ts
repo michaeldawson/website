@@ -115,13 +115,13 @@ export default function HarlemShake() {
   var n = 550;
   var r = 550;
   var i =
-    "https://s3.amazonaws.com/moovweb-marketing/playground/harlem-shake.mp3";
+    "https://firebasestorage.googleapis.com/v0/b/impulse-5501d.appspot.com/o/tmp%2Fharlem-shake.mp3?alt=media&token=cc28ea02-d928-4ea0-9623-45cc8951ef9b";
   var s = "mw-harlem_shake_me";
   var o = "im_first";
   var u = ["im_drunk", "im_baked", "im_trippin", "im_blown"];
   var a = "mw-strobe_light";
   var f =
-    "https://s3.amazonaws.com/moovweb-marketing/playground/harlem-shake-style.css";
+    "https://firebasestorage.googleapis.com/v0/b/impulse-5501d.appspot.com/o/tmp%2Fshake.css?alt=media&token=fb58676d-5068-416e-8f83-c7f40ef256be";
   var l = "mw_added_css";
   var b = g();
   var w = y();
