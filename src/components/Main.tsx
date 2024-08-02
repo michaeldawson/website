@@ -10,6 +10,7 @@ import { Helmet } from "react-helmet";
 import { v4 as uuidv4 } from "uuid";
 import AirRobe from "../components/Icons/AirRobe";
 import Impulse from "../components/Icons/Impulse";
+import WillToThrive from "../components/Icons/WillToThrive";
 import useWindowSize from "../utils/useWindowSize";
 import ActionPact from "./Icons/ActionPact";
 import IconWrapper from "./IconWrapper";
@@ -30,6 +31,7 @@ const desktopIcons = {
   AirRobe,
   Impulse,
   ActionPact,
+  WillToThrive,
 };
 
 type ProgramName = keyof typeof Programs;
@@ -103,9 +105,7 @@ function Main({
   }
 
   const openProgram = (name: ProgramName, props?: any) => {
-    const slug = props?.mdx?.frontmatter?.slug;
     setSlug(props?.mdx?.frontmatter?.slug);
-
     setOpenPrograms([...openPrograms, { pid: uuidv4(), name, props }]);
   };
 
@@ -133,6 +133,8 @@ function Main({
 
   const postTitle = mdx?.frontmatter?.title;
   const title = postTitle ? `${postTitle} | Michael Dawson` : "Michael Dawson";
+
+  console.log({ startBarPosts });
 
   return (
     <ThemeProvider>
@@ -211,7 +213,7 @@ function Main({
                   node.frontmatter.link || node.frontmatter.slug
                 )}
               >
-                {node.frontmatter.slug}
+                {node.frontmatter.startBarTitle}
               </List.Item>
             ))}
           </List>

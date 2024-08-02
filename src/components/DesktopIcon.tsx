@@ -19,9 +19,7 @@ export default function DesktopIcon({
   ...rest
 }: Props) {
   const [isSelected, setSelected] = useState(false);
-
   const selectedStyles = isSelected ? { border: "1px solid black" } : {};
-
   const toggleSelected = () => setSelected((i) => !i);
 
   return (

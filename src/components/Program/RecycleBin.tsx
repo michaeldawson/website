@@ -2,7 +2,9 @@ import { useClippy } from "@react95/clippy";
 import { Progman17 } from "@react95/icons/esm/react/Progman17";
 import React from "react";
 import me from "../../images/me.jpeg";
+import ActionPactIcon from "../Icons/ActionPact";
 import IconWrapper from "../IconWrapper";
+
 import ExplorerProgram from "./Templates/Explorer";
 import runVirus from "./Virus";
 
@@ -19,6 +21,14 @@ export default function RecycleBin({ openProgram, handleClose }: any) {
         name="notavirus.exe"
       >
         <Progman17 />
+      </IconWrapper>
+      <IconWrapper
+        handleDoubleClick={() => {
+          window.location.href = "/actionpact";
+        }}
+        name="actionpact"
+      >
+        <ActionPactIcon />
       </IconWrapper>
     </ExplorerProgram>
   );

@@ -12,7 +12,8 @@
     "start": "gatsby develop",
     "build": "gatsby build",
     "serve": "gatsby serve",
-    "clean": "gatsby clean"
+    "clean": "gatsby clean",
+    "deploy": "nvm use 18 && yarn build && nvm use 18 && firebase deploy"
   },
   "engines": {
     "node": "16"

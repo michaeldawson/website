@@ -1,7 +1,7 @@
 import * as React from "react";
 import IconWrapper from "../IconWrapper";
 
-export default function AirRobeIcon(props) {
+export default function ImpulseIcon(props) {
   return (
     <IconWrapper white name="Impulse" {...props}>
       <svg
