@@ -18,6 +18,7 @@ import "./main.css";
 import * as Programs from "./Program";
 
 const CLIPPY_WISDOM = [
+  "It looks like you're trying to sell to therapists. Would you like help with that?",
   "When all else fails, bind some paper together! My name is Clippy.",
   "It looks like you're trying to view my website. Would you like help with that?",
   "Perhaps it is the file that exists, but YOU who do not?",
@@ -134,8 +135,6 @@ function Main({
   const postTitle = mdx?.frontmatter?.title;
   const title = postTitle ? `${postTitle} | Michael Dawson` : "Michael Dawson";
 
-  console.log({ startBarPosts });
-
   return (
     <ThemeProvider>
       <GlobalStyle></GlobalStyle>
@@ -213,7 +212,7 @@ function Main({
                   node.frontmatter.link || node.frontmatter.slug
                 )}
               >
-                {node.frontmatter.startBarTitle}
+                {node.frontmatter.title}
               </List.Item>
             ))}
           </List>

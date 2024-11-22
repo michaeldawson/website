@@ -10,6 +10,7 @@ export const pageQuery = graphql`
       frontmatter {
         title
         subtitle
+        startBarTitle
       }
     }
     allMdx(sort: { order: DESC, fields: [frontmatter___date] }) {
@@ -24,6 +25,8 @@ export const pageQuery = graphql`
             title
             subtitle
             desktopIcon
+            sbt
+            startBarTitle
             link
             order
             icon
