@@ -32,7 +32,7 @@ export default function TextProgram({
           height="100%"
           boxShadow="in"
           bg="white"
-          className={[classes.frame, "frame"]}
+          className={[classes.frame, "frame", "post"]}
           style={{
             height: modalHeight - 33,
           }}

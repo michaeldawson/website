@@ -1,5 +1,6 @@
 import React from "react";
-import TextProgram from "./Templates/Text";
+import TextProgram from "../Templates/Text";
+import "./Post.scss";
 
 export default function Post({ mdx, children, handleClose, handleClick }) {
   const isBig = true || mdx.body.length > 200;

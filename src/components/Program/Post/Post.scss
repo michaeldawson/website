@@ -1,0 +1,158 @@
+.post {
+  h1,
+  h2,
+  h3,
+  h4 {
+    letter-spacing: 1px;
+  }
+
+  h2 {
+    margin-top: 40px;
+    margin-bottom: 30px;
+    font-size: 22px;
+  }
+
+  .post-date {
+    margin-bottom: 40px;
+    color: #666;
+  }
+
+  blockquote {
+    margin-top: 25px;
+    font-style: italic;
+  }
+
+  blockquote:before {
+    content: '"';
+    font-size: 33px;
+    position: relative;
+    left: -30px;
+  }
+
+  p,
+  li {
+    margin-bottom: 20px;
+    font-size: 22px;
+    letter-spacing: 0.5px;
+    line-height: 1.4em;
+  }
+
+  /* Crazy, I know */
+  img[src="/impulse.png"] {
+    width: 60%;
+    margin: 0 20%;
+  }
+
+  img[src="/rails.png"] {
+    width: 40%;
+    margin: 0 30%;
+  }
+
+  img[src="/guidelines.png"] {
+    width: 200px;
+    margin: 0 calc(50% - 100px);
+  }
+
+  img[src="/tactics.png"] {
+    width: 200px;
+    margin: 0 calc(50% - 100px);
+  }
+
+  img[src="/chess.png"] {
+    width: 33%;
+    margin: 0 33%;
+  }
+
+  img[src="/booster.png"] {
+    width: 33%;
+    margin: 0 33%;
+    filter: grayscale(1);
+  }
+
+  img[src="/clothes.png"] {
+    width: 100%;
+  }
+
+  img[src="/airrobe-widget.png"] {
+    max-width: 500px;
+  }
+
+  img[src="/blog-images/loop-hole.png"] {
+    width: 50%;
+    margin: 0 25%;
+  }
+
+  img[src="/blog-images/blumen.png"] {
+    width: 120px;
+  }
+
+  img[src="/blog-images/me.jpeg"] {
+    width: 33%;
+    margin: 0 33%;
+  }
+
+  img[src="/blog-images/sharehouse.png"] {
+    width: 33%;
+    margin: 0 33%;
+  }
+
+  img[src="/blog-images/about.png"] {
+    width: 33%;
+    margin: 0 33%;
+  }
+
+  img[src="/blog-images/s2.png"] {
+    width: 80%;
+  }
+
+  @media (max-width: 768px) {
+    img[src="/the-loop-hole.png"] {
+      width: 33%;
+      margin: 20px;
+    }
+
+    img[src="/blog-images/loop-hole.png"] {
+      width: 100%;
+      margin: 20px auto;
+    }
+
+    img[src="/airrobe-widget.png"] {
+      width: 100%;
+    }
+
+    img[src="/rails.png"] {
+      width: 100%;
+      margin: 20px 0;
+    }
+
+    img[src="/blog-images/tshirts.png"] {
+      width: 100%;
+    }
+
+    img[src="/booster.png"] {
+      width: 60%;
+      margin: 20px 20%;
+    }
+
+    img[src="/chess.png"] {
+      width: 60%;
+      margin: 20px 20%;
+    }
+
+    img[src="/blog-images/sharehouse.png"] {
+      width: 80%;
+      margin: 0 10%;
+    }
+
+    img[src="/blog-images/about.png"] {
+      width: 80%;
+      margin: 0 10%;
+    }
+
+    p,
+    li {
+      font-size: 17px;
+      letter-spacing: 0.4px;
+    }
+  }
+}

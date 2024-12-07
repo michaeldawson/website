@@ -14,11 +14,9 @@ import WillToThrive from "../components/Icons/WillToThrive";
 import useWindowSize from "../utils/useWindowSize";
 import ActionPact from "./Icons/ActionPact";
 import IconWrapper from "./IconWrapper";
-import "./main.css";
 import * as Programs from "./Program";
 
 const CLIPPY_WISDOM = [
-  "It looks like you're trying to sell to therapists. Would you like help with that?",
   "When all else fails, bind some paper together! My name is Clippy.",
   "It looks like you're trying to view my website. Would you like help with that?",
   "Perhaps it is the file that exists, but YOU who do not?",
@@ -59,11 +57,10 @@ function Main({
   const { clippy } = useClippy();
   const [openPrograms, setOpenPrograms] = useState<Array<OpenProgram>>([]);
   const [clippyElement, setClippyElement] = useState<any>();
-
   const [clippySpeaking, setClippySpeaking] = useState(false);
   const [clippyHidden, setClippyHidden] = useState(false);
 
-  function navigate(slug) {
+  function makeNavigationFactory(slug) {
     return function () {
       window.location.href = slug;
     };
@@ -76,7 +73,6 @@ function Main({
       if (clippySpeaking || clippyHidden) return;
 
       setClippySpeaking(true);
-
       setTimeout(() => setClippySpeaking(false), 10000);
 
       if (CLIPPY_WISDOM.length === 0) {
@@ -96,8 +92,6 @@ function Main({
     if (!clippy) return;
 
     setClippyElement(clippy._balloon._targetEl[0]);
-
-    // setTimeout(() => clippy.play("Wave"), 4000);
   }, [clippy]);
 
   function setSlug(slug: string) {
@@ -119,12 +113,15 @@ function Main({
     (post) => post.node.frontmatter.order
   );
 
-  console.log({ desktopPosts });
-
   const startBarPosts = sortBy(
     posts.filter((post) => post.node.frontmatter.order),
     (post) => post.node.frontmatter.order
   );
+
+  const handleFreecellClick = () => {
+    openProgram("Freecell");
+    setTimeout(() => clippy.speak("Just don't play it for too long!"), 5000);
+  };
 
   useEffect(() => {
     if (children) {
@@ -146,7 +143,7 @@ function Main({
             <IconWrapper
               white
               name="Freecell"
-              handleDoubleClick={() => openProgram("Freecell")}
+              handleDoubleClick={handleFreecellClick}
             >
               <FreecellIcon />
             </IconWrapper>
@@ -156,7 +153,7 @@ function Main({
             return (
               <Icon
                 key={index}
-                handleDoubleClick={navigate(
+                handleDoubleClick={makeNavigationFactory(
                   post.node.frontmatter.link || post.node.frontmatter.slug
                 )}
               />
@@ -208,7 +205,7 @@ function Main({
               <List.Item
                 key={node.frontmatter.slug}
                 icon={node.frontmatter.icon}
-                onClick={navigate(
+                onClick={makeNavigationFactory(
                   node.frontmatter.link || node.frontmatter.slug
                 )}
               >
