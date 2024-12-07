@@ -8,13 +8,13 @@ import { map, sortBy } from "lodash";
 import React, { createElement, useEffect, useState } from "react";
 import { Helmet } from "react-helmet";
 import { v4 as uuidv4 } from "uuid";
-import AirRobe from "../components/Icons/AirRobe";
-import Impulse from "../components/Icons/Impulse";
-import WillToThrive from "../components/Icons/WillToThrive";
-import useWindowSize from "../utils/useWindowSize";
-import ActionPact from "./Icons/ActionPact";
-import IconWrapper from "./IconWrapper";
-import * as Programs from "./Program";
+import useWindowSize from "../../utils/useWindowSize";
+import ActionPact from "../Icons/ActionPact";
+import Impulse from "../Icons/Impulse";
+import WillToThrive from "../Icons/WillToThrive";
+import IconWrapper from "../IconWrapper";
+import * as Programs from "../Program";
+import "./Main.scss";
 
 const CLIPPY_WISDOM = [
   "When all else fails, bind some paper together! My name is Clippy.",
@@ -27,7 +27,6 @@ if (typeof window !== "undefined")
 
 // Hacky hacky hack
 const desktopIcons = {
-  AirRobe,
   Impulse,
   ActionPact,
   WillToThrive,
@@ -208,6 +207,7 @@ function Main({
                 onClick={makeNavigationFactory(
                   node.frontmatter.link || node.frontmatter.slug
                 )}
+                className="startbar-item"
               >
                 {node.frontmatter.title}
               </List.Item>
