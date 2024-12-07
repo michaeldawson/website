@@ -10,6 +10,7 @@ import { Helmet } from "react-helmet";
 import { v4 as uuidv4 } from "uuid";
 import useWindowSize from "../../utils/useWindowSize";
 import ActionPact from "../Icons/ActionPact";
+import ForPioneers from "../Icons/ForPioneers";
 import Impulse from "../Icons/Impulse";
 import WillToThrive from "../Icons/WillToThrive";
 import IconWrapper from "../IconWrapper";
@@ -20,6 +21,9 @@ const CLIPPY_WISDOM = [
   "When all else fails, bind some paper together! My name is Clippy.",
   "It looks like you're trying to view my website. Would you like help with that?",
   "Perhaps it is the file that exists, but YOU who do not?",
+  "In an empty filesystem, all paths are possible.",
+  "Do you know the parable of the Chinese farmer?",
+  "I was hoping you could tell it to me.",
 ];
 
 if (typeof window !== "undefined")
@@ -30,6 +34,7 @@ const desktopIcons = {
   Impulse,
   ActionPact,
   WillToThrive,
+  ForPioneers,
 };
 
 type ProgramName = keyof typeof Programs;
@@ -149,6 +154,7 @@ function Main({
           )}
           {desktopPosts.map((post, index) => {
             const Icon = desktopIcons[post.node.frontmatter.desktopIcon];
+
             return (
               <Icon
                 key={index}
