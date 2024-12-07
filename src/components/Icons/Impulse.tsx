@@ -1,4 +1,4 @@
-import { Wab321019 } from "@react95/icons/esm/react/wab321019";
+import { Wab321019 } from "@react95/icons/esm/react/Wab321019";
 import * as React from "react";
 import IconWrapper from "../IconWrapper";
 
