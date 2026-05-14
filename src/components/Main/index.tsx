@@ -1,54 +1,25 @@
-import { ClippyProvider, useClippy } from "@react95/clippy";
+import { ClippyProvider } from "@react95/clippy";
 import { GlobalStyle, List, TaskBar, ThemeProvider } from "@react95/core";
 import { Freecell1 as FreecellIcon } from "@react95/icons/esm/react/Freecell1";
 import { RecycleFull } from "@react95/icons/esm/react/RecycleFull";
 import { WebOpen } from "@react95/icons/esm/react/WebOpen";
 import "@react95/icons/icons.css";
 import { map, sortBy } from "lodash";
-import React, { createElement, useEffect, useState } from "react";
+import React, { createElement, useEffect } from "react";
 import { Helmet } from "react-helmet";
-import { v4 as uuidv4 } from "uuid";
+import { useClippyHelper } from "../../hooks/useClippyHelper";
+import { useWindowManager } from "../../hooks/useWindowManager";
 import useWindowSize from "../../utils/useWindowSize";
-import ActionPact from "../Icons/ActionPact";
-import ForPioneers from "../Icons/ForPioneers";
-import Impulse from "../Icons/Impulse";
-import WillToThrive from "../Icons/WillToThrive";
+import { desktopIconRegistry, DesktopIconName } from "../Icons/registry";
 import IconWrapper from "../IconWrapper";
 import * as Programs from "../Program";
 import "./Main.scss";
 
-const CLIPPY_WISDOM = [
-  "When all else fails, bind some paper together! My name is Clippy.",
-  "It looks like you're trying to view my website. Would you like help with that?",
-  "Perhaps it is the file that exists, but YOU who do not?",
-  "In an empty filesystem, all paths are possible.",
-  "Do you know the parable of the Chinese farmer?",
-  "I was hoping you could tell it to me.",
-];
-
-if (typeof window !== "undefined")
-  (window as any).CLIPPY_CDN = "/clippy/agents/";
-
-// Hacky hacky hack
-const desktopIcons = {
-  Impulse,
-  ActionPact,
-  WillToThrive,
-  ForPioneers,
-};
-
-type ProgramName = keyof typeof Programs;
-
-type OpenProgram = {
-  pid: string;
-  name: ProgramName;
-  props?: any;
-};
-
-const history =
-  typeof document === "undefined"
-    ? null
-    : require("history").createBrowserHistory();
+function navigateTo(slug: string) {
+  return () => {
+    window.location.href = slug;
+  };
+}
 
 function Main({
   data: {
@@ -58,60 +29,10 @@ function Main({
   children,
 }) {
   const size = useWindowSize();
-  const { clippy } = useClippy();
-  const [openPrograms, setOpenPrograms] = useState<Array<OpenProgram>>([]);
-  const [clippyElement, setClippyElement] = useState<any>();
-  const [clippySpeaking, setClippySpeaking] = useState(false);
-  const [clippyHidden, setClippyHidden] = useState(false);
+  const { clippy } = useClippyHelper();
+  const { openPrograms, openProgram, closeProgram, setSlug } = useWindowManager();
 
-  function makeNavigationFactory(slug) {
-    return function () {
-      window.location.href = slug;
-    };
-  }
-
-  useEffect(() => {
-    if (!clippyElement) return;
-
-    clippyElement.addEventListener("click", function () {
-      if (clippySpeaking || clippyHidden) return;
-
-      setClippySpeaking(true);
-      setTimeout(() => setClippySpeaking(false), 10000);
-
-      if (CLIPPY_WISDOM.length === 0) {
-        clippy.animate();
-      } else {
-        clippy.speak(CLIPPY_WISDOM.shift());
-      }
-    });
-
-    clippyElement.addEventListener("dblclick", () => {
-      setClippyHidden(true);
-      clippy.hide();
-    });
-  }, [clippyElement]);
-
-  useEffect(() => {
-    if (!clippy) return;
-
-    setClippyElement(clippy._balloon._targetEl[0]);
-  }, [clippy]);
-
-  function setSlug(slug: string) {
-    if (!slug) return;
-    history?.push("/" + slug);
-  }
-
-  const openProgram = (name: ProgramName, props?: any) => {
-    setSlug(props?.mdx?.frontmatter?.slug);
-    setOpenPrograms([...openPrograms, { pid: uuidv4(), name, props }]);
-  };
-
-  const closeProgram = (processId: string) =>
-    setOpenPrograms(openPrograms.filter(({ pid }) => processId !== pid));
-
-  const posts = edges.filter((edge) => !!edge.node.frontmatter.date); // You can filter your posts based on some criteria
+  const posts = edges.filter((edge) => !!edge.node.frontmatter.date);
   const desktopPosts = sortBy(
     posts.filter((post) => post.node.frontmatter.desktopIcon),
     (post) => post.node.frontmatter.order
@@ -153,12 +74,13 @@ function Main({
             </IconWrapper>
           )}
           {desktopPosts.map((post, index) => {
-            const Icon = desktopIcons[post.node.frontmatter.desktopIcon];
+            const iconName = post.node.frontmatter.desktopIcon as DesktopIconName;
+            const Icon = desktopIconRegistry[iconName];
 
             return (
               <Icon
                 key={index}
-                handleDoubleClick={makeNavigationFactory(
+                handleDoubleClick={navigateTo(
                   post.node.frontmatter.link || post.node.frontmatter.slug
                 )}
               />
@@ -210,12 +132,12 @@ function Main({
               <List.Item
                 key={node.frontmatter.slug}
                 icon={node.frontmatter.icon}
-                onClick={makeNavigationFactory(
+                onClick={navigateTo(
                   node.frontmatter.link || node.frontmatter.slug
                 )}
                 className="startbar-item"
               >
-                {node.frontmatter.title}
+                {node.frontmatter.startBarTitle || node.frontmatter.title}
               </List.Item>
             ))}
           </List>
